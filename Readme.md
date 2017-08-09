@@ -1,7 +1,7 @@
 # Личный проект «Глейси»
 
 * Студент: [Ольга Савон](https://up.htmlacademy.ru/htmlcss/18/user/124799).
-* Наставник: `Неизвестно`.
+* Наставник: [Владислав Балабанович](https://htmlacademy.ru/profile/vladbesson).
 
 ---
 
