@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Магазин мороженого Глейси</title>
+  </head>
+  <body>
+    <header class="main-header">
+      <nav class="main-navigation">
+        <a class="logo">
+          <img src="img/logo.jpg" width="154" height="64" alt="Логотип магазина Глейси">
+        </a>
+        <ul class="site-navigation">
+          <li class="catalog-navigation"><a href="catalog.html">Каталог</a>
+            <ul class="catalog-sub-menu">
+              <li><a href="gllacy-catalog.html/new">Новинки</a></li>
+              <li><a href="gllacy-catalog.html">Сливочное</a></li>
+              <li><a href="gllacy-catalog.html/sorbet">Щербеты</a></li>
+              <li><a href="gllacy-catalog.html/frozen-ice">Фруктовый лед</a></li>
+              <li><a href="gllacy-catalog.html/melorin">Мелорин</a></li>
+            </ul>
+          </li>
+          <li><a href="delivery.html">Доставка и оплата</a></li>
+          <li><a href="company-info.html">О компании</a></li>
+        </ul>
+        <input type="search" name="search" placeholder="Что ищем?">
+        <ul class="user-navigation">
+          <li class="login-link">
+            Вход
+            <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
+              <p>
+                <input class="login-email" type="text" name="login" autocomplete="on" placeholder="Электронная почта">
+              </p>
+              <p>
+               <input class="login-password" type="password" name="password" autocomplete="off" placeholder="Пароль">
+              </p>
+              <button class="button" type="submit">Войти</button>
+              <p class="login-password-info">
+                <a class="restore" href="#">Забыли пароль?</a>
+                <a class="new-user" href="#">Новая регистрация</a>
+              </p>
+            </form>
+          </li>
+          <li class="cart"><a href=cart.html>Корзина</a></li>
+        </ul>
+        <p class="working-hours">с 10 до 20, ежедневно</p>
+        <p class="tel">8 812 450-25-25</p>
+      </nav>
+    </header>
+    <main>
+      <h1 class="visually-hidden">Магазин мороженого Глейси</h1>
+      <section class="slider">
+        <h2 class="visually-hidden">Идеальные сочетания мороженого от магазина мороженого Глейси</h2>
+        <input type="radio" id="btn-1" name="toggle" checked>
+        <input type="radio" id="btn-2" name="toggle">
+        <input type="radio" id="btn-3" name="toggle">
+        <div class="slider-controls">
+          <label for="btn-1"></label>
+          <label for="btn-2"></label>
+          <label for="btn-3"></label>
+        </div>
+        <ul class="slides">
+          <li class="slide">
+            <p class="slide-title">Крем-брюле и пломбир с малиновым джемом</p>
+            <a class="slide-button" href="#">Давайте оба!</a>
+          </li>
+          <li class="slide">
+            <p class="slide-title">Шоколадный пломбир и лимонный сорбет</p>
+            <a class="slide-button" href="#">Давайте оба!</a>
+          </li>
+          <li class="slide">
+            <p class="button slide-title">Пломбир с помадкой и клубничный щербет</p>
+            <a class="button slide-button" href="#">Давайте оба!</a>
+          </li>
+        </ul>
+      </section>
+      <section>
+        <h2 class="visually-hidden">Промо-предложения магазина мороженого Глейси</h2>
+        <ul class="banners">
+          <li class="banner-item">
+            <h3>Малинка даром!</h3>
+            <p>При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
+             <a class="button" href="#">Хочу варенье!</a>
+          </li>
+          <li class="banner-item">
+            <h3>Шоколадки даром!</h3>
+            <p>При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
+             <a class="button" href="#">Хочу шоколадки!</a>
+          </li>
+        </ul>
+      </section>
+      <section class="best-sellers">
+        <h2 class="visually-hidden">Хит продаж мороженого магазина Глейси</h2>
+        <ul class="best-sellers-list">
+          <li class="best-seller-item">
+            <h3 class="product-name">Сливочное с апельсиновым джемом и цитрусовой стружкой</h3>
+            <span class="best-seller-mark">Хит</span>
+            <img src="img/cream-orange.jpg" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
+            <p class="price-and-order">
+              <b>310 ₽/кг</b>
+              <a class="button" href="#">Быстрый просмотр</a>
+            </p>
+          </li>
+          <li class="best-seller-item">
+            <h3 class="product-name">Сливочно-кофейное с кусочками шоколада</h3>
+            <span class="best-seller-mark">Хит</span>
+            <img src="img/cream-coffee-chocolate.jpg" width="267" height="267" alt="Сливочно-кофейное с кусочками шоколада">
+            <p class="price-and-order">
+              <b>380 ₽/кг</b>
+              <a class="button" href="#">Быстрый просмотр</a>
+            </p>
+          </li>
+           <li class="best-seller-item">
+            <h3 class="product-name">Сливочно-клубничное с присыпкой из белого шоколада</h3>
+            <span class="best-seller-mark">Хит</span>
+            <img src="img/cream-strawberry-white-chocolate.jpg" width="267" height="267" alt="Сливочно-клубничное с присыпкой из белого шоколада">
+            <p class="price-and-order">
+              <b>355 ₽/кг</b>
+              <a class="button" href="#">Быстрый просмотр</a>
+            </p>
+          </li>
+            <li class="best-seller-item">
+            <h3 class="product-name">Сливочное крем-брюле с карамельной подливкой</h3>
+            <span class="best-seller-mark">Хит</span>
+            <img src="img/cream-creme-brulee-caramel.jpg" width="267" height="267" alt="Сливочное крем-брюле с карамельной подливкой">
+            <p class="price-and-order">
+              <b>415 ₽/кг</b>
+              <a class="button" href="#">Быстрый просмотр</a>
+            </p>
+          </li>
+        </ul>
+      </section>
+      <section class="features">
+        <h2 class="visually-hidden">Преимущества магазина Глейси</h2>
+        <p class="about-us">Магазин Глейси — это онлайн и офлайн магазин по продаже мороженого собственного производства на развес</p>
+        <ul class="features-list">
+          <li class="feature-item">
+            <p>Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</p>
+          </li>
+          <li class="feature-item">
+            <p>Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.</p>
+          </li>
+          <li class="feature-item">
+            <p>Закупка ингредиентов  производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</p>
+          </li>
+          <li class="feature-item">
+            <p>Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</p>
+          </li>
+        </ul>  
+      </section>
+      <article class="blog-recipe">
+        <h2>Новое в нашем блоге</h2>
+        <a href="gllacy-blog.html/10-variation-sorbet-dressing">
+          <h3>10 способов сервировки фруктовых щербетов к столу</h3>
+        </a>
+      </article>
+      <section class="subscription">
+        <h2 class="visually-hidden">Подписка на новости магазина Глейси</h2>
+        <form class="subscription-form" action="https://echo.htmlacademy.ru" method="post">
+          <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
+          <input class="subscription-email" type="email" name="email"  placeholder="Электронная почта">
+          <button class="button new-subscription" type="submit">Отправить</button>
+        </form>
+      </section>
+      <section class="contacts">
+        <h2 class="visually-hidden">Контакты магазина Глейси</h2>
+        <h3>
+          Адрес главного офиса<br>
+          и офлайн магазина:
+        </h3>
+        <p>
+          ул. Большая Конюшенная<br>
+          19/8, Санкт-Петербург
+        </p>
+        <h3>Для заказов по телефону:</h3>
+        <p>8 812 450-25-25</p>
+        <p>(с 10 до 20 ежедневно)</p>
+        <a class="button feedback-button" href="gllacy-feedback.html">Форма обратной связи</a>
+      </section>
+    </main>
+    <footer>
+      <div class="footer-social">
+        <ul>
+          <li><a class="social-button" href="https://www.https://twitter.com/gllacy-shop">Фейсбук</a></li>
+          <li><a class="social-button" href="https://www.instagram.com/gllacy-shop/">Инстаграм</a></li>
+          <li><a class="social-button" href="https://www.facebook.com/gllacy-shop">Фейсбук</a></li><li><a class="social-button" href="https://vk.com/gllacy-shop">Вконтакте</a></li>
+        </ul>
+      </div>
+      <span>Для поставщиков</span>
+      <ul class="for-suppliers">
+        <li><a href="#">О производстве</a></li>
+        <li><a href="#">Наши документы</a></li>
+        <li><a href="#">Экологические стандарты</a></li>
+      </ul>
+      <p class="footer-copyright">
+        <img src="img/logo-htmlacademy.png" height="108" width="39" alt="Логотип разработчика HTML Academy">
+        <span>Сделано в</span> 
+        <a class="button" href="https://htmlacademy.ru">HTML Academy</a>
+        <span>@ 2017</span>
+      </p>
+    </footer>
+    <section class="modal modal-feedback">
+      <h2 class="visually-hidden">Форма обратной связи магазина Глейси</h2>
+      <p>Мы обязательно вам ответим!</p>
+      <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
+        <p>
+          <input class="user-name" type="text" name="user-name" placeholder="Как вас зовут?">
+        </p>
+        <p>
+          <input class="user-email" type="email" name="email"  placeholder="Ваша почта для ответа?">
+        </p>
+        <p class="user-feedback">
+          <textarea placeholder="Напишите что-нибудь..."></textarea>
+        </p>
+        <button class="button" type="submit">Отправить</button>
+      </form>
+      <button class="modal-close" type="button" title="Закрыть"  value="modal-close">Закрыть</button>
+    </section>
+  </body>
+</html>
