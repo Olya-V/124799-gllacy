@@ -3,13 +3,14 @@
   <head>
     <meta charset="utf-8">
     <title>Магазин мороженого Глейси</title>
+    <link href="css/style.css"  type="text/css" rel="stylesheet">
   </head>
   <body>
     <header class="main-header">
       <div class="container">
         <div class="logo-navigation">
           <a class="main-logo">
-            <img src="img/logo.jpg" width="154" height="64" alt="Логотип магазина Глейси">
+            <img src="img/logo.svg" width="154" height="64" alt="Логотип магазина Глейси">
           </a>
         </div>
         <nav class="site-navigation">
@@ -29,8 +30,8 @@
         </nav>
         <div class="user-navigation">
           <div class="search">
+            <span class="search-icon">Поиск</span>
             <form class="search-form">
-              <span class="search-icon">Поиск</span>
               <input type="search" name="search" placeholder="Что ищем?">
             </form>
           </div>
@@ -51,7 +52,7 @@
             </form>
           </div>
           <div class="cart">
-            <a href=cart.html>
+            <a class="empty-cart" href=cart.html>
               Корзина
               <span>Пусто</span>
             </a>
@@ -59,7 +60,7 @@
         </div>
         <div class="working-information">
             <p class="working-hours">с 10 до 20, ежедневно</p>
-            <p class="tel">8 812 450-25-25</p>
+            <p class="working-tel">8 812 450-25-25</p>
         </div>
       </div>
     </header>
@@ -94,12 +95,12 @@
         <section class="promo-offers">
           <h2 class="visually-hidden">Промо-предложения магазина мороженого Глейси</h2>
           <div class="banner raspberry">
-            <h3>Малинка даром!</h3>
+            <h3 clas="banner-title">Малинка даром!</h3>
             <p>При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
              <a class="button" href="#">Хочу варенье!</a>
           </div>
           <div class="banner chocolate">
-            <h3>Шоколадки даром!</h3>
+            <h3 clas="banner-title">Шоколадки даром!</h3>
             <p>При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
              <a class="button" href="#">Хочу шоколадки!</a>
           </div>
@@ -107,7 +108,7 @@
         <section class="catalog">
           <h2 class="visually-hidden">Хит продаж мороженого магазина Глейси</h2>
           <div class="product best-seller">
-            <img src="img/cream-orange.jpg" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
+            <img src="img/cream-orange.png" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
             <span class="price">310 ₽/кг</span>
             <h3 class="product-name">Сливочное с апельсиновым джемом и цитрусовой стружкой</h3>
             <div class="order">
@@ -115,7 +116,7 @@
             </div>
           </div>
           <div class="product best-seller">
-            <img src="img/cream-coffee-chocolate.jpg" width="267" height="267" alt="Сливочно-кофейное с кусочками шоколада">
+            <img src="img/cream-coffee-chocolate.png" width="267" height="267" alt="Сливочно-кофейное с кусочками шоколада">
             <span class="price">380 ₽/кг</span>
             <h3 class="product-name">Сливочно-кофейное с кусочками шоколада</h3>
             <div class="order">
@@ -123,7 +124,7 @@
             </div>
           </div>
           <div class="product best-seller">
-            <img src="img/cream-strawberry-white-chocolate.jpg" width="267" height="267" alt="Сливочно-клубничное с присыпкой из белого шоколада">
+            <img src="img/cream-strawberry-white-chocolate.png" width="267" height="267" alt="Сливочно-клубничное с присыпкой из белого шоколада">
             <span class="price">355 ₽/кг</span>
             <h3 class="product-name">Сливочно-клубничное с присыпкой из белого шоколада</h3>
             <div class="order">
@@ -131,7 +132,7 @@
             </div>
           </div>
           <div class="product best-seller">
-            <img src="img/cream-creme-brulee-caramel.jpg" width="267" height="267" alt="Сливочное крем-брюле с карамельной подливкой">
+            <img src="img/cream-creme-brulee-caramel.png" width="267" height="267" alt="Сливочное крем-брюле с карамельной подливкой">
             <span class="price">415 ₽/кг</span>
             <h3 class="product-name">Сливочное крем-брюле с карамельной подливкой</h3>
             <div class="order">
@@ -157,7 +158,7 @@
         </section>
         <div class="news">
           <article class="blog">
-            <h2>Новое в нашем блоге</h2>
+            <h2 class="blog-title">Новое в нашем блоге</h2>
             <a href="gllacy-blog.html/10-variation-sorbet-dressing">
               <h3>10 способов сервировки фруктовых щербетов к столу</h3>
             </a>
@@ -178,7 +179,7 @@
       </div>
       <div class="contacts">
         <h2 class="visually-hidden">Контакты магазина Глейси</h2>
-        <h3>
+        <h3 class="address-title">
           Адрес главного офиса<br>
           и офлайн магазина:
         </h3>
@@ -186,7 +187,7 @@
           ул. Большая Конюшенная<br>
           19/8, Санкт-Петербург
         </p>
-        <h3>Для заказов по телефону:</h3>
+        <h3 class="tel-title">Для заказов по телефону:</h3>
         <p>8 812 450-25-25</p>
         <p>(с 10 до 20 ежедневно)</p>
         <a class="button feedback-button" href="gllacy-feedback.html">Форма обратной связи</a>
@@ -228,7 +229,7 @@
           </ul>
         </nav>
         <div class="footer-copyright">
-          <img src="img/logo-htmlacademy.png" height="108" width="39" alt="Логотип разработчика HTML Academy">
+          <img src="img/logo-htmlacademy.svg" height="108" width="39" alt="Логотип разработчика HTML Academy">
           <span>
             Сделано в <a class="button" href="https://htmlacademy.ru">HTML Academy</a> @ 2017
           </span>
