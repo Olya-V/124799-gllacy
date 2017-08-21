@@ -19,7 +19,7 @@
               <a class="site-navigation__link" href="catalog.html">Каталог</a>
               <ul class="navigation-catalog__sub-menu-list">
                 <li class="navigation-catalog__item">
-                  <a class="navigation-catalog__link"href="gllacy-catalog.html/new">Новинки</a>
+                  <a class="navigation-catalog__link" href="gllacy-catalog.html/new">Новинки</a>
                 </li>
                 <li class="navigation-catalog__item">
                   <a class="navigation-catalog__link" href="gllacy-catalog.html">Сливочное</a>
@@ -48,19 +48,19 @@
             <button class="search__icon visually-hidden" type="button" title="Поиск">Поиск</button>
             <form class="search__form">
               <label class="search__filed-name visually-hidden" for="search">Поиск</label>
-              <input class="search__field" type="search" id="serach" name="search" placeholder="Что ищем?">
+              <input class="search__field" type="search" id="search" name="search" placeholder="Что ищем?">
             </form>
           </div>
           <div class="user-login">
             <button class="user-login__link" type="button">Вход</button>
             <form class="user-login__form" action="https://echo.htmlacademy.ru" method="post">
-              <div class="user-login__email">
-                <label class="visually-hidden" for="login-email">Электронная почта</label>
-                <input class="login-email" id="login-email" type="text" name="login" autocomplete="on" placeholder="Электронная почта">
+              <div class="user-login__email email">
+                <label class="email__value visually-hidden" for="login-email">Электронная почта</label>
+                <input class="email__field" id="login-email" type="text" name="login" autocomplete="on" placeholder="Электронная почта">
               </div>
-              <div class="user-login__password">
-                <label class="visually-hidden"  for="login-password">Пароль</label>
-                <input class="login-password" id="login-password" type="password" name="password" autocomplete="off" placeholder="Пароль">
+              <div class="user-login__password password">
+                <label class="password__value visually-hidden"  for="login-password">Пароль</label>
+                <input class="password__filed" id="login-password" type="password" name="password" autocomplete="off" placeholder="Пароль">
               </div>
               <button class="button" type="submit">Войти</button>
               <div class="user-login__password-info">
@@ -82,7 +82,7 @@
     </header>
     <main class="main-content">
       <div class="container">
-        <h1 class="visually-hidden">Магазин мороженого Глейси</h1>
+        <h1 class="main-content__page-title visually-hidden">Магазин мороженого Глейси</h1>
         <section class="slider">
           <h2 class="slider__title visually-hidden">Идеальные сочетания мороженого от магазина мороженого Глейси</h2>
           <input class="slider__toggle" type="radio" id="btn-1" name="toggle" checked>
@@ -93,17 +93,17 @@
             <label class="control-names__item" for="btn-2">Второе сочетание вкусов </label>
             <label class="control-names__item" for="btn-3">Третье сочетание вкусов</label>
           </div>
-          <ul class="slider__slides">
-            <li class="slider__slides__item slider__slides__item--raspberry">
-              <p class="slider__slides__title">Крем-брюле и пломбир с малиновым джемом</p>
+          <ul class="slider__list slides">
+            <li class="slides__item slides__item--raspberry">
+              <p class="slides__title">Крем-брюле и пломбир с малиновым джемом</p>
               <a class="button" href="#">Давайте оба!</a>
             </li>
-            <li class="slider__slides__item slider__slides__item--lemon">
-              <p class="slider__slides__title">Шоколадный пломбир и лимонный сорбет</p>
+            <li class="slides__item slides__item--lemon">
+              <p class="slides__title">Шоколадный пломбир и лимонный сорбет</p>
               <a class="button" href="#">Давайте оба!</a>
             </li>
-            <li class="slider__slides__item slider__slides__item--strawberry">
-              <p class="slider__slides__title">Пломбир с помадкой и клубничный щербет</p>
+            <li class="slides__item slides__item--strawberry">
+              <p class="slides__title">Пломбир с помадкой и клубничный щербет</p>
               <a class="button" href="#">Давайте оба!</a>
             </li>
           </ul>
@@ -123,7 +123,7 @@
         </section>
         <section class="catalog">
           <h2 class="catalog__title visually-hidden">Хит продаж мороженого магазина Глейси</h2>
-          <div class="catalog__product product best-seller">
+          <div class="catalog__product product product--best-seller">
             <img class="product__view" src="img/cream-orange.png" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
             <span class="product__price">310 ₽/кг</span>
             <h3 class="product__name">Сливочное с апельсиновым джемом и цитрусовой стружкой</h3>
@@ -131,7 +131,7 @@
               <a class="button" href="#">Быстрый просмотр</a>
             </div>
           </div>
-          <div class="catalog__product product best-seller">
+          <div class="catalog__product product product--best-seller">
             <img class="product__view" src="img/cream-coffee-chocolate.png" width="267" height="267" alt="Сливочно-кофейное с кусочками шоколада">
             <span class="product__price">380 ₽/кг</span>
             <h3 class="product__name">Сливочно-кофейное с кусочками шоколада</h3>
@@ -139,15 +139,15 @@
               <a class="button" href="#">Быстрый просмотр</a>
             </div>
           </div>
-          <div class="catalog__product product best-seller">
+          <div class="catalog__product product product--best-seller">
             <img class="product__view" src="img/cream-strawberry-white-chocolate.png" width="267" height="267" alt="Сливочно-клубничное с присыпкой из белого шоколада">
             <span class="product__price">355 ₽/кг</span>
-            <h3 class="catalog__product__name">Сливочно-клубничное с присыпкой из белого шоколада</h3>
+            <h3 class="product__name">Сливочно-клубничное с присыпкой из белого шоколада</h3>
             <div class="product__order">
               <a class="button" href="#">Быстрый просмотр</a>
             </div>
           </div>
-          <div class="catalog__product product best-seller">
+          <div class="catalog__product product product--best-seller">
             <img class="product__view" src="img/cream-creme-brulee-caramel.png" width="267" height="267" alt="Сливочное крем-брюле с карамельной подливкой">
             <span class="product__price">415 ₽/кг</span>
             <h3 class="product__name">Сливочное крем-брюле с карамельной подливкой</h3>
@@ -219,11 +219,11 @@
             <input class="feedback-form__user-field" id="user-name" type="text" name="user-name" placeholder="Как вас зовут?">
           </div>
           <div class="feedback-form__email">
-            <label class="feedback-form__user-email visually-hidden" for="user-email">Электронная почта</label>
+            <label class="feedback-form__email-value visually-hidden" for="user-email">Электронная почта</label>
             <input class="feedback-form__email-field" id="user-email" type="email" name="email"  placeholder="Ваша почта для ответа?">
           </div>
           <div class="feedback-form__feedback">
-            <label class="feedback-form__feedback-field-name visually-hidden" for="user-feedback">Поле для обращения</label>
+            <label class="feedback-form__field-name visually-hidden" for="user-feedback">Поле для обращения</label>
             <textarea class="feedback-form__feedback-field" id="user-feedback" placeholder="Напишите что-нибудь..."></textarea>
           </div>
           <button class="button" type="submit">Отправить</button>
@@ -236,7 +236,7 @@
         <div class="footer-social">
           <ul class="footer-social__list">
             <li class="footer-social__item">
-              <a class="social-button social-button--twitter" href="https://www.https://twitter.com/gllacy-shop">Твиттер</a>
+              <a class="footer-social__link social-button social-button--twitter" href="https://www.https://twitter.com/gllacy-shop">Твиттер</a>
             </li>
             <li class="footer-social__item">
               <a class="footer-social__link social-button social-button--instagram" href="https://www.instagram.com/gllacy-shop/">Инстаграм</a>
