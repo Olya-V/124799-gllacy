@@ -95,15 +95,15 @@
           </div>
           <ul class="slider__slides">
             <li class="slider__slides__item slider__slides__item--raspberry">
-              <p class="slider__slides__item-title">Крем-брюле и пломбир с малиновым джемом</p>
+              <p class="slider__slides__title">Крем-брюле и пломбир с малиновым джемом</p>
               <a class="button" href="#">Давайте оба!</a>
             </li>
             <li class="slider__slides__item slider__slides__item--lemon">
-              <p class="slider__slides__item-title">Шоколадный пломбир и лимонный сорбет</p>
+              <p class="slider__slides__title">Шоколадный пломбир и лимонный сорбет</p>
               <a class="button" href="#">Давайте оба!</a>
             </li>
             <li class="slider__slides__item slider__slides__item--strawberry">
-              <p class="slider__slides__item-title">Пломбир с помадкой и клубничный щербет</p>
+              <p class="slider__slides__title">Пломбир с помадкой и клубничный щербет</p>
               <a class="button" href="#">Давайте оба!</a>
             </li>
           </ul>
@@ -111,12 +111,12 @@
         <section class="banners">
           <h2 class="banners__title visually-hidden">Промо-предложения магазина мороженого Глейси</h2>
           <div class="banners__item banners__item--raspberry">
-            <h3 class="banners__title">Малинка даром!</h3>
+            <h3 class="banners__item-title">Малинка даром!</h3>
             <p class="banners__offer">При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
              <a class="button" href="#">Хочу варенье!</a>
           </div>
           <div class="banners__item banners__item--chocolate">
-            <h3 class="banners__title">Шоколадки даром!</h3>
+            <h3 class="banners__item-title">Шоколадки даром!</h3>
             <p class="banners__offer">При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
              <a class="button" href="#">Хочу шоколадки!</a>
           </div>
@@ -192,39 +192,39 @@
       </div>
     </main>
     <section class="contacts">
-      <div class="contacts-map">
-        <img class="contacts-map__view" src="img/map.jpg" width="1200" height="430" alt="Главнй офис и магазин по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
+      <div class="contacts__map map">
+        <img class="map__view" src="img/map.jpg" width="1200" height="430" alt="Главнй офис и магазин по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
       </div>
-      <div class="contacts-details">
-        <h2 class="visually-hidden">Контакты магазина Глейси</h2>
-        <h3 class="contacts-details__title">
+      <div class="contacts__details shop-contacts">
+        <h2 class="shop-contacts__title visually-hidden">Контакты магазина Глейси</h2>
+        <h3 class="shop-contacts__subtitle">
           Адрес главного офиса<br>
           и офлайн магазина:
         </h3>
-        <p class="contacts-details__address">
+        <p class="shop-contacts__address">
           ул. Большая Конюшенная<br>
           19/8, Санкт-Петербург
         </p>
-        <h3 class="contacts-details__title">Для заказов по телефону:</h3>
-        <p class="contacts-details__tel">8 812 450-25-25</p>
-        <p>(с 10 до 20 ежедневно)</p>
-        <a class="button contacts-details__feedback" href="gllacy-feedback.html">Форма обратной связи</a>
+        <h3 class="shop-contacts__subtitle">Для заказов по телефону:</h3>
+        <p class="shop-contacts__tel">8 812 450-25-25</p>
+        <p class="shop-contacts__working-hours">(с 10 до 20 ежедневно)</p>
+        <a class="button" href="gllacy-feedback.html">Форма обратной связи</a>
       </div>
       <div class="modal-feedback modal">
-        <h2 class="visually-hidden">Форма обратной связи магазина Глейси</h2>
+        <h2 class="modal-feedback__title visually-hidden">Форма обратной связи магазина Глейси</h2>
         <p class="modal-feedback__greeting">Мы обязательно вам ответим!</p>
-        <form class="modal-feedback__form" action="https://echo.htmlacademy.ru" method="post">
-          <div>
-            <label class="visually-hidden" for="user-name">Имя</label>
-            <input class="user-name" id="user-name" type="text" name="user-name" placeholder="Как вас зовут?">
+        <form class="modal-feedback__form feedback-form" action="https://echo.htmlacademy.ru" method="post">
+          <div class="feedback-form__user">
+            <label class="feedback-form__user-name visually-hidden" for="user-name">Имя</label>
+            <input class="feedback-form__user-field" id="user-name" type="text" name="user-name" placeholder="Как вас зовут?">
           </div>
-          <div>
-            <label class="visually-hidden" for="user-email">Электронная почта</label>
-            <input class="user-email" id="user-email" type="email" name="email"  placeholder="Ваша почта для ответа?">
+          <div class="feedback-form__email">
+            <label class="feedback-form__user-email visually-hidden" for="user-email">Электронная почта</label>
+            <input class="feedback-form__email-field" id="user-email" type="email" name="email"  placeholder="Ваша почта для ответа?">
           </div>
-          <div class="user-feedback">
-            <label class="visually-hidden" for="user-feedback">Поле для обращения</label>
-            <textarea class="user-feedback-field" id="user-feedback" placeholder="Напишите что-нибудь..."></textarea>
+          <div class="feedback-form__feedback">
+            <label class="feedback-form__feedback-field-name visually-hidden" for="user-feedback">Поле для обращения</label>
+            <textarea class="feedback-form__feedback-field" id="user-feedback" placeholder="Напишите что-нибудь..."></textarea>
           </div>
           <button class="button" type="submit">Отправить</button>
         </form>
