@@ -837,7 +837,7 @@ a {
   border-left: transparent;        
 }
 
-
+/* filters */
 
 .main-content__page-title {
   font-size: 35px;
@@ -845,7 +845,7 @@ a {
   font-weight: 700;
 }
 
-.sort-layout__title {
+.filter__title {
   font-size: 14px;
   line-height: 14px;
   font-weight: 500;
@@ -935,17 +935,3 @@ a {
   padding-right: 10px;
   border-radius: 50%;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
