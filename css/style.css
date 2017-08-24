@@ -15,7 +15,6 @@ a {
   text-decoration-color: rgba(255, 255, 255, 0.2);
 }
 
-
 /* buttons */
 
 .button {
@@ -29,6 +28,7 @@ a {
   color: #ffffff;
   text-decoration: none;
   background: linear-gradient(to bottom, #f26843 0%, #e74a35 100%);
+  border: none;
   border-radius: 100px;
 }
 
@@ -47,12 +47,7 @@ a {
 .button--slide {
   font-size: 32px;
   line-height: 44px;
-
 }
-
-
-
-
 
 .main-header .container {
   font-size: 16px;
@@ -86,6 +81,7 @@ a {
 }
 
 /* наведение меню */
+
 .site-navigation__link:hover,
 .site-navigation__link:focus {
   padding-top: 8px;
@@ -100,6 +96,7 @@ a {
 }
 
 /* нажатие меню */
+
 .site-navigation__link:active {
   padding-top: 8px;
   padding-left: 13px;
@@ -114,6 +111,7 @@ a {
 }
 
 /* находимся на странице */
+
 .site-navigation__link--current {
   padding-top: 8px;
   padding-left: 13px;
@@ -147,9 +145,10 @@ a {
 }
 
 /* наведение выпадающего меню каталога */
+
 .navigation-catalog__link:hover,
 .navigation-catalog__link:focus {
-    background-color: #fbded7;
+  background-color: #fbded7;
 }
 
 /* нажатие выпадающего меню каталога */
@@ -159,6 +158,7 @@ a {
 }
 
 /* находимся на странице раздела каталога*/
+
 .navigation-catalog__link--current {
   background-color: #d07058;
 }
@@ -296,7 +296,6 @@ a {
   text-decoration-color: rgba(232, 77, 55, 0.2);
 }
 
-
 /* cart */
 
 .cart__items { 
@@ -373,7 +372,6 @@ a {
   display: table-cell;
 }
 
-
 /* slides */
 
 .slides__title {
@@ -388,7 +386,6 @@ a {
   background-image: url("../img/slide-green.png");
   background-position: center;
   background-repeat: no-repeat;
-
 }
 
 .slides__item--lemon {
@@ -398,14 +395,12 @@ a {
   background-repeat: no-repeat;
 }
 
-
 .slides__item--strawberry {
   background-color: #9d8b84;
   background-image: url("../img/slide-brown.png");
   background-position: center;
   background-repeat: no-repeat;
 }
-
 
 /* banners */
 
@@ -440,7 +435,6 @@ a {
   background-size: 100%;
   border-radius: 15px;
 }
-
 
 .banners__item--chocolate {
   background-image: url("../img/chocolate-background.jpg");
@@ -501,7 +495,6 @@ a {
   text-align: center;
 }
 
-
 /* features */
 
 .features {
@@ -561,7 +554,6 @@ a {
   background-image: url("../img/thermometer.svg");
 }
 
-
 /* news__blog */
 
 .news__blog {
@@ -573,7 +565,6 @@ a {
   background-size: 100%;
   border-radius: 15px; 
 }
-
 
 .news-blog__section {
   margin-top: 0;
@@ -619,9 +610,7 @@ a {
   color: #5a5a5a;
 }
 
-
 /* contacts */
-
 
 .contacts__details {
   padding-top: 30px;
@@ -630,7 +619,6 @@ a {
   padding-bottom: 28px;
   background-color: #fefefe;
 }
-
 
 .shop-contacts__subtitle {
   margin-top: 0;
@@ -676,7 +664,6 @@ a {
   font-weight: 400;
   color: #323232;
 }
-
 
 .modal-feedback {
   padding-top: 19px;
@@ -743,7 +730,6 @@ a {
   color: #ffffff;
 }
 
-
 /* footer-navigation */
 
 .footer-navigation__list {
@@ -789,7 +775,6 @@ a {
   color: #ffffff;
 }
 
-
 /* catalog breadcrumbs */
 
 .breadcrumbs {
@@ -803,6 +788,7 @@ a {
   font-weight: 400;
   color: #ffffff;
 }
+
 .breadcrumbs__link {
   position: relative;
 }
@@ -836,8 +822,6 @@ a {
   border-bottom: transparent;
   border-left: transparent;        
 }
-
-
 
 .main-content__page-title {
   font-size: 35px;
@@ -904,7 +888,6 @@ a {
   text-decoration: none;
 }
 
-
 .pagination-list__link--current {
   color: #323232;
   background-color: #ffffff;
@@ -935,17 +918,3 @@ a {
   padding-right: 10px;
   border-radius: 50%;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
