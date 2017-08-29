@@ -8,352 +8,388 @@
     <link href="css/normalize.css" rel="stylesheet">
   </head>
   <body>
-    <header class="main-header">
-      <div class="container">
-        <div class="main-header__main-navigation">
-          <div class="logo-navigation">
-            <a class="logo-navigation__logo-field" href="gllacy-index.html">
-              <img class="logo-navigation__logo" src="img/logo.svg" width="154" height="64" alt="Логотип магазина Глейси">
-            </a>
+    <div class="site-wrapper">
+      <div class="content-wrapper">
+        <header class="main-header">
+          <div class="container">
+            <div class="header-columns">
+              <div class="main-header__main-navigation">
+                <div class="logo-navigation">
+                  <a class="logo-navigation__logo-field" href="gllacy-index.html">
+                    <img class="logo-navigation__logo" src="img/logo.svg" width="154" height="64" alt="Логотип магазина Глейси">
+                  </a>
+                </div>
+                <nav class="site-navigation">
+                  <ul class="site-navigation__list">
+                    <li class="site-navigation__item navigation-catalog">
+                      <a class="site-navigation__link site-navigation__link--current" href="catalog.html">Каталог</a>
+                      <ul class="navigation-catalog__sub-menu">
+                        <li class="navigation-catalog__item">
+                          <a class="navigation-catalog__link new-products" href="gllacy-catalog.html/new">Новинки</a>
+                        </li>
+                        <li class="navigation-catalog__item navigation-catalog__item--current">
+                          <a class="navigation-catalog__link" href="gllacy-catalog.html">Сливочное</a>
+                        </li>
+                        <li class="navigation-catalog__item">
+                          <a class="navigation-catalog__link" href="gllacy-catalog.html/sorbet">Щербеты</a>
+                        </li>
+                        <li class="navigation-catalog__item">
+                          <a class="navigation-catalog__link" href="gllacy-catalog.html/frozen-ice">Фруктовый лед</a>
+                        </li>
+                        <li class="navigation-catalog__item">
+                          <a class="navigation-catalog__link" href="gllacy-catalog.html/melorin">Мелорин</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="site-navigation__item">
+                      <a class="site-navigation__link" href="delivery.html">Доставка и оплата</a>
+                    </li>
+                    <li class="site-navigation__item">
+                      <a class="site-navigation__link" href="company-info.html">О компании</a>
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+              <div class="main-header__user-navigation">
+                <div class="search">
+                  <div class="search__icon" title="Поиск"><span class="visually-hidden">Поиск</span></div>
+                  <form class="search__form">
+                    <label class="search__filed-name visually-hidden" for="serach">Поиск</label>
+                    <input class="search__field" id="serach" name="search" placeholder="Что ищем?">
+                  </form>
+                </div>
+                <div class="user-login">
+                  <span class="user-login__icon">Вход</span>
+                  <form class="user-login__form" action="https://echo.htmlacademy.ru" method="post">
+                    <div class="user-login__email email">
+                      <label class="email__value visually-hidden" for="login-email">Электронная почта</label>
+                      <input class="email__field" id="login-email" type="text" name="login" autocomplete="on" placeholder="Электронная почта">
+                    </div>
+                    <div class="user-login__password password">
+                      <label class="password__value visually-hidden"  for="login-password">Пароль</label>
+                      <input class="password__filed" id="login-password" type="password" name="password" autocomplete="off" placeholder="Пароль">
+                    </div>
+                    <button class="button" type="submit">Войти</button>
+                    <div class="user-login__password-info">
+                      <a class="user-login__restore-password" href="restore.html">Забыли пароль?</a>
+                      <a class="user-login__new-user" href="register.html">Новая регистрация</a>
+                    </div>
+                  </form>
+                </div>
+                <div class="cart cart--full">
+                  <span class="cart__icon visually-hidden" title="корзина">Корзина</span>
+                  <span class="cart__items">2 товара</span>
+                  <div class="cart__form">
+                    <div class="cart__list">
+                      <ul class="cart__item item-details">
+                        <li class="item-details__delete">
+                          <button class="item-details__delete-button" type="button" title="Удалить" value="удалить">Удалить</button>
+                        </li>
+                        <li class="item-details__view">
+                          <img class="item-details__small-picture" src="img/cart-icecream-orange.png" width="33" height="33" alt="Пломбир с апельсиновым джемом">
+                        </li>
+                        <li class="item-details__name">Пломбир с апельсиновым джемом</li>
+                        <li class="item-details__weight">1,5 кг</li>
+                        <li class="item-details__multiply">x</li>
+                        <li class="item-details__price">200 руб.</li>
+                        <li class="item-details__total-price">300 руб.</li>
+                      </ul> 
+                      <ul class="cart__item item-details">
+                        <li class="item-details__delete">
+                          <button class="item-details__delete-button" type="button" title="Удалить" value="удалить">Удалить</button>
+                        </li>
+                        <li class="item-details__view">
+                          <img class="item-details__view-smaill-picture" src="img/cart-icecream-strawberry.png" width="33" height="33" alt="Клубничный пломбир с присыпкой из белого шоколада">
+                        </li>
+                        <li class="item-details__name">Клубничный пломбир с присыпкой из белого шоколада</li>
+                        <li class="item-details__weight">1,5 кг</li>
+                        <li class="item-details__multiply">x</li>
+                        <li class="item-details__price">300 руб.</li>
+                        <li class="item-details__total-price">450 руб.</li> 
+                      </ul>
+                      <ul class="cart__summary total">
+                        <li class="total__title">Итого:</li>
+                        <li class="total__amount">750 руб.</li>
+                      </ul>
+                    </div>
+                    <button class="button" type="submit">Оформить заказ</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="header-columns header-columns--info">
+              <div class="working-information">
+                <p class="working-information__hours">с 10 до 20, ежедневно</p>
+                <p class="working-information__tel">8 812 450-25-25</p>
+              </div> 
+            </div> 
           </div>
-          <nav class="site-navigation">
-            <ul class="site-navigation__list">
-              <li class="site-navigation__item navigation-catalog">
-                <a class="site-navigation__link site-navigation__link--current" href="catalog.html">Каталог</a>
-                <ul class="navigation-catalog__sub-menu">
-                  <li class="navigation-catalog__item">
-                    <a class="navigation-catalog__link new-products" href="gllacy-catalog.html/new">Новинки</a>
-                  </li>
-                  <li class="navigation-catalog__item">
-                    <a class="navigation-catalog__link navigation-catalog__link--current" href="gllacy-catalog.html">Сливочное</a>
-                  </li>
-                  <li class="navigation-catalog__item">
-                    <a class="navigation-catalog__link" href="gllacy-catalog.html/sorbet">Щербеты</a>
-                  </li>
-                  <li class="navigation-catalog__item">
-                    <a class="navigation-catalog__link" href="gllacy-catalog.html/frozen-ice">Фруктовый лед</a>
-                  </li>
-                  <li class="navigation-catalog__item">
-                    <a class="navigation-catalog__link" href="gllacy-catalog.html/melorin">Мелорин</a>
-                  </li>
-                </ul>
+        </header>
+        <main class="main-content">
+          <div class="container">
+            <ul class="breadcrumbs">
+              <li class="breadcrumbs__item">
+                <a class="breadcrumbs__link" href="index.html">Главная</a>
               </li>
-              <li class="site-navigation__item">
-                <a class="site-navigation__link" href="delivery.html">Доставка и оплата</a>
+              <li class="breadcrumbs__item">
+                <a class="breadcrumbs__link" href="catalog.html">Каталог</a>
               </li>
-              <li class="site-navigation__item">
-                <a class="site-navigation__link" href="company-info.html">О компании</a>
-              </li>
+              <li class="breadcrumbs__item breadcrumbs-current">Сливочное</li>
             </ul>
-          </nav>
-        </div>
-        <div class="main-header__user-navigation">
-          <div class="search">
-            <button class="search__icon visually-hidden" type="button" title="Поиск">Поиск</button>
-            <form class="search__form">
-              <label class="search__filed-name visually-hidden" for="serach">Поиск</label>
-              <input class="search__field" id="serach" name="search" placeholder="Что ищем?">
-            </form>
-          </div>
-          <div class="user-login">
-            <span class="user-login__icon">Вход</span>
-            <form class="user-login__form" action="https://echo.htmlacademy.ru" method="post">
-              <div class="user-login__email email">
-                <label class="email__value visually-hidden" for="login-email">Электронная почта</label>
-                <input class="email__field" id="login-email" type="text" name="login" autocomplete="on" placeholder="Электронная почта">
+            <h1 class="main-content__page-title">Сливочное мороженое</h1>
+            <section class="filters">
+              <h2 class="filters__title visually-hidden">Фильтр товаров</h2>
+              <form class="filters__form filter" action="https://echo.htmlacademy.ru" method="get">
+                <fieldset class="filter__section filter__section--layout">
+                  <legend class="filter__title">Сортировка:</legend>
+                  <select class="filter__options options options--layout" name="option">
+                    <option class="options__item" value="best-sellers">по популярности</option>
+                    <option class="options__item" value="cheap">сначала недорогие</option>
+                    <option class="options__item" value="expensive">сначала дорогие</option>
+                    <option class="options__item" value="fat-control">по жирности</option>
+                  </select>
+                </fieldset>
+                <fieldset class="filter__section filter__section--range">
+                  <legend class="filter__title ">Цена: 100 руб. - 500 руб.</legend>
+                  <input class="filter__options options options--range" type="range" min="100" max="500" step="5" name="price">
+                </fieldset>
+                <fieldset class="filter__section filter__section--fat">
+                  <legend class="filter__title">Жирность:</legend>
+                  <ul class="filter__options options options--fat">
+                    <li class="options__item">
+                      <input class="options__field" type="radio" id="filter-fat-0" name="fat-content" value="0">
+                      <label class="options__value" for="filter-fat-0">0%</label>
+                    </li>
+                     <li class="options__item">
+                      <input class="options__field" type="radio" id="filter-fat-0-10" name="fat-content" value="below-10" checked>
+                      <label class="options__value" for="filter-fat-0-10">до 10%</label>
+                    </li>
+                     <li class="options__item">
+                      <input class="options__field" type="radio" id="filter-fat-10-30" name="fat-content" value="10-30">
+                      <label class="options__value" for="filter-fat-10-30">до 30%</label>
+                    </li>
+                     <li class="options__item">
+                      <input class="options__field" type="radio" id="filter-fat-30" name="fat-content" value="30-up">
+                      <label class="options__value" for="filter-fat-30">выше 30%</label>
+                    </li>
+                  </ul>
+                </fieldset>
+                <fieldset class="filter__section filter__section--stuffing">
+                  <legend class="filter__title">Наполнители:</legend>
+                  <ul class="filter__options options options--stuffing">
+                    <li class="options__item">
+                      <input class="options__field" type="checkbox" id="filter-chocolate" name="chocolate" checked>
+                      <label class="options__value" for="filter-chocolate">шоколадные</label>
+                    </li>
+                    <li class="options__item">
+                      <input class="options__field" type="checkbox" id="filter-sugar-powder" name="sugar-powder" checked>
+                      <label class="options__value" for="filter-sugar-powder">cахарные присыпки</label>
+                    </li>
+                    <li class="options__item">
+                      <input class="options__field" type="checkbox" id="filter-fruits" name="fruits">
+                      <label class="options__value" for="filter-fruits">фрукты</label>
+                    </li>
+                    <li class="options__item">
+                      <input class="options__field" type="checkbox" id="filter-syrup" name="syrup">
+                      <label class="options__value" for="filter-syrup">сиропы</label>
+                    </li>
+                    <li class="options__item">
+                      <input class="options__field" type="checkbox" id="filter-jams" name="jams">
+                      <label class="options__value" for="filter-jams">джемы</label>
+                    </li>
+                  </ul>
+                </fieldset>
+                <button class="filter__button" type="submit">Применить</button>
+              </form>
+            </section>
+            <section class="catalog">
+              <h2 class="catalog__title visually-hidden">Каталог сливочного мороженного</h2>
+              <div class="catalog-wrap">
+                <div class="catalog__product product">
+                  <a class="product__link" href="#">
+                    <img class="product__view" src="img/cream-orange.png" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
+                    <h3 class="product__name">Сливочное с апельсиновым джемом и цитрусовой стружкой</h3>
+                  </a>
+                  <div class="product__price">310 ₽<span class="product__measure">/кг</span></div>
+                  <div class="product__order">        
+                    <a class="button" href="#">Быстрый просмотр</a>
+                  </div>
+                </div>
+                <div class="catalog__product product">
+                  <a class="product__link" href="#">
+                    <img class="product__view" src="img/cream-coffee-chocolate.png" width="267" height="267" alt="Сливочно-кофейное с кусочками шоколада">
+                    <h3 class="product__name">Сливочно-кофейное с кусочками шоколада</h3>
+                  </a>
+                  <div class="product__price">380 ₽<span class="product__measure">/кг</span></div>
+                  <div class="product__order"></div>
+                  <div class="product__order"> 
+                    <a class="button" href="#">Быстрый просмотр</a>
+                  </div>
+                </div>
+                <div class="catalog__product product">
+                  <a class="product__link" href="#">
+                    <img class="product__view" src="img/cream-strawberry-white-chocolate.png" width="267" height="267" alt="Сливочно-клубничное с присыпкой из белого шоколада">
+                    <h3 class="product__name">Сливочно-клубничное с присыпкой из белого шоколада</h3>           
+                  </a>
+                  <div class="product__price">355 ₽<span class="product__measure">/кг</span></div>
+                  <div class="product__order">   
+                    <a class="button" href="#">Быстрый просмотр</a>
+                  </div>
+                </div>
+                <div class="catalog__product product">
+                  <a class="product__link" href="#">
+                    <img class="product__view" src="img/cream-creme-brulee-caramel.png" width="267" height="267" alt="Сливочное крем-брюле с карамельной подливкой">
+                    <h3 class="product__name">Сливочное крем-брюле с карамельной подливкой</h3>
+                  </a>
+                  <div class="product__price">415 ₽<span class="product__measure">/кг</span></div>
+                  <div class="product__order"> 
+                    <a class="button" href="#">Быстрый просмотр</a>
+                  </div>
+                </div>
+                <div class="catalog__product product">
+                  <a class="product__link" href="#">
+                    <img class="product__view" src="img/cream-cowberry.png" width="267" height="267" alt="Сливочное с брусничным джемом">
+                    <h3 class="product__name">Сливочное с брусничным джемом</h3>
+                  </a>    
+                  <div class="product__price">325 ₽<span class="product__measure">/кг</span></div>
+                  <div class="product__order">  
+                    <a class="button" href="#">Быстрый просмотр</a>
+                  </div>
+                </div>
+                <div class="catalog__product product">
+                  <a class="product__link" href="#">
+                    <img class="product__view" src="img/cream-blueberry.png" width="267" height="267" alt="Сливочно-черничное с цельными ягодами черники">
+                    <h3 class="product__name">Сливочно-черничное с цельными ягодами черники</h3>        
+                  </a>
+                  <div class="product__price">410 ₽<span class="product__measure">/кг</span></div>
+                  <div class="product__order">   
+                    <a class="button" href="#">Быстрый просмотр</a>
+                  </div>
+                </div>
+                <div class="catalog__product product">
+                  <a class="product__link" href="#">
+                    <img class="product__view" src="img/cream-lemon.png" width="267" height="267" alt="Сливочно-лимонное с карамельной присыпкой">
+                    <h3 class="product__name">Сливочно-лимонное с карамельной присыпкой</h3>
+                  </a>           
+                  <div class="product__price">375 ₽<span class="product__measure">/кг</span></div>
+                  <div class="product__order">
+                    <a class="button" href="#">Быстрый просмотр</a>
+                  </div>
+                </div>
+                <div class="catalog__product product">
+                  <a class="product__link" href="#">
+                    <img class="product__view" src="img/cream-chocolate-chips.png" width="267" height="267" alt="Сливочное с шоколадной стружкой">
+                    <h3 class="product__name">Сливочное с шоколадной стружкой</h3>
+                  </a>
+                  <div class="product__price">320 ₽<span class="product__measure">/кг</span></div>            
+                  <div class="product__order">
+                    <a class="button" href="#">Быстрый просмотр</a>
+                  </div>
+                </div>
+                <div class="catalog__product product">
+                  <a class="product__link" href="#">
+                    <img class="product__view" src="img/cream-vanilla-chocolate-chips.png" width="267" height="267" alt="Сливочно-ванильное с кусочками шоколада"> 
+                    <h3 class="product__name">Сливочно-ванильное с кусочками шоколада</h3>
+                  </a>
+                  <div class="product__price">440 ₽<span class="product__measure">/кг</span></div>
+                  <div class="product__order">              
+                    <a class="button" href="#">Быстрый просмотр</a>
+                  </div>
+                </div>
+                <div class="catalog__product product">
+                  <a class="product__link" href="#">
+                    <img class="product__view" src="img/cream-menthol.png" width="267" height="267" alt="Сливочноe с ментоловым сиропом">
+                    <h3 class="product__name">Сливочноe с ментоловым сиропом</h3>
+                  </a>            
+                  <div class="product__price">435 ₽<span class="product__measure">/кг</span></div>
+                  <div class="product__order">             
+                    <a class="button" href="#">Быстрый просмотр</a>
+                  </div>
+                </div>
+                <div class="catalog__product product">
+                  <a class="product__link" href="#">
+                    <img class="product__view" src="img/cream-dark-chocolate-chips.png" width="267" height="267" alt="Сливочное с кусочками черного шоколада">
+                    <h3 class="product__name">Сливочное с кусочками черного шоколада</h3>
+                  </a>            
+                  <div class="product__price">355 ₽<span class="product__measure">/кг</span></div>
+                  <div class="product__order">              
+                    <a class="button" href="#">Быстрый просмотр</a>
+                  </div>
+                </div>
+                <div class="catalog__product product">
+                  <a class="product__link" href="#">
+                    <img class="product__view" src="img/cream-mint.png" width="267" height="267" alt="Сливочное с мятным сиропом">
+                    <h3 class="product__name">Сливочное с мятным сиропом</h3>
+                  </a>
+                  <div class="product__price">420 ₽<span class="product__measure">/кг</span></div>
+                  <div class="product__order">              
+                    <a class="button" href="#">Быстрый просмотр</a>
+                  </div>
+                </div>
               </div>
-              <div class="user-login__password password">
-                <label class="password__value visually-hidden"  for="login-password">Пароль</label>
-                <input class="password__filed" id="login-password" type="password" name="password" autocomplete="off" placeholder="Пароль">
-              </div>
-              <button class="button" type="submit">Войти</button>
-              <div class="user-login__password-info">
-                <a class="user-login__restore-password" href="restore.html">Забыли пароль?</a>
-                <a class="user-login__new-user" href="register.html">Новая регистрация</a>
-              </div>
-            </form>
-          </div>
-          <div class="cart cart--full">
-            <span class="cart__icon visually-hidden" title="корзина">Корзина</span>
-            <span class="cart__items">2 товара</span>
-            <div class="cart__form">
-              <div class="cart__list">
-                <ul class="cart__item item-details">
-                  <li class="item-details__delete">
-                    <button class="item-details__delete-button" type="button" title="Удалить" value="удалить">Удалить</button>
-                  </li>
-                  <li class="item-details__view">
-                    <img class="item-details__small-picture" src="img/cart-icecream-orange.png" width="33" height="33" alt="Пломбир с апельсиновым джемом">
-                  </li>
-                  <li class="item-details__name">Пломбир с апельсиновым джемом</li>
-                  <li class="item-details__weight">1,5 кг</li>
-                  <li class="item-details__multiply">x</li>
-                  <li class="item-details__price">200 руб.</li>
-                  <li class="item-details__total-price">300 руб.</li>
-                </ul> 
-                <ul class="cart__item item-details">
-                  <li class="item-details__delete">
-                    <button class="item-details__delete-button" type="button" title="Удалить" value="удалить">Удалить</button>
-                  </li>
-                  <li class="item-details__view">
-                    <img class="item-details__view-smaill-picture" src="img/cart-icecream-strawberry.png" width="33" height="33" alt="Клубничный пломбир с присыпкой из белого шоколада">
-                  </li>
-                  <li class="item-details__name">Клубничный пломбир с присыпкой из белого шоколада</li>
-                  <li class="item-details__weight">1,5 кг</li>
-                  <li class="item-details__multiply">x</li>
-                  <li class="item-details__price">300 руб.</li>
-                  <li class="item-details__total-price">450 руб.</li> 
-                </ul>
-                <ul class="cart__summary total">
-                  <li class="total__title">Итого:</li>
-                  <li class="total__amount">750 руб.</li>
-                </ul>
-              </div>
-              <button class="button" type="submit">Оформить заказ</button>
-            </div>
-          </div>
-        </div>
-        <div class="working-information">
-          <p class="working-information__hours">с 10 до 20, ежедневно</p>
-          <p class="working-information__tel">8 812 450-25-25</p>
-        </div>  
-      </div>
-    </header>
-    <main class="main-content">
-      <div class="container">
-        <h1 class="main-content__page-title">Сливочное мороженое</h1>
-        <ul class="breadcrumbs">
-          <li class="breadcrumbs__item">
-            <a class="breadcrumbs__link" href="index.html">Главная</a>
-          </li>
-          <li class="breadcrumbs__item">
-            <a class="breadcrumbs__link" href="catalog.html">Каталог</a>
-          </li>
-          <li class="breadcrumbs__item breadcrumbs-current">Сливочное</li>
-        </ul>
-        <section class="filters">
-          <h2 class="filters__title visually-hidden">Фильтр товаров</h2>
-          <form class="filters__form filter" action="https://echo.htmlacademy.ru" method="get">
-            <fieldset class="filter__section">
-              <legend class="filter__title filter__title--layout">Сортировка:</legend>
-              <select class="filter__options options options--layout" name="option">
-                <option class="options__item" value="best-sellers">по популярности</option>
-                <option class="options__item" value="cheap">сначала недорогие</option>
-                <option class="options__item" value="expensive">сначала дорогие</option>
-                <option class="options__item" value="fat-control">по жирности</option>
-              </select>
-            </fieldset>
-            <fieldset class="filter__section">
-              <legend class="filter__title">Цена:100-500 руб.:</legend>
-              <input class="filter__options options options--range" type="range" min="100" max="500" step="5" name="price">
-            </fieldset>
-            <fieldset class="filter__section">
-              <legend class="filter__title">Жирность:</legend>
-              <ul class="filter__options options options--fat">
-                <li class="options__item">
-                  <input class="options__field" type="radio" id="filter-fat-0" name="fat-content" value="0">
-                  <label class="options__value" for="filter-fat-0">0%</label>
+              <ul class="pagination-list">
+                <li class="pagination-list__item">
+                  <a class="pagination-list__link pagination-list__link--current">1</a>
                 </li>
-                 <li class="options__item">
-                  <input class="options__field" type="radio" id="filter-fat-0-10" name="fat-content" value="below-10" checked>
-                  <label class="options__value" for="filter-fat-0-10">до 10%</label>
+                <li class="pagination-list__item">
+                  <a class="pagination-list__link" href="#">2</a>
                 </li>
-                 <li class="options__item">
-                  <input class="options__field" type="radio" id="filter-fat-10-30" name="fat-content" value="10-30">
-                  <label class="options__value" for="filter-fat-10-30">до 30%</label>
+                <li class="pagination-list__item">
+                  <a class="pagination-list__link" href="#">3</a>
                 </li>
-                 <li class="options__item">
-                  <input class="options__field" type="radio" id="filter-fat-30" name="fat-content" value="30-up">
-                  <label class="options__value" for="filter-fat-30">выше 30%</label>
+                <li class="pagination-list__item">
+                  <a class="pagination-list__link" href="#">4</a>
+                </li>
+                <li class="pagination-list__item">
+                  <a class="pagination-list__link" href="#">5</a>
                 </li>
               </ul>
-            </fieldset>
-            <fieldset class="filter__section">
-              <legend class="filter__title">Наполнители:</legend>
-              <ul class="filter__options options options--stuffing">
-                <li class="options__item">
-                  <input class="options__field" type="checkbox" id="filter-chocolate" name="chocolate" checked>
-                  <label class="options__value" for="filter-chocolate">Шоколадные</label>
+            </section>
+          </div>
+        </main>
+        <footer class="main-footer">
+          <div class="container container--footer">
+            <div class="footer-social">
+              <ul class="footer-social__list">
+                <li class="footer-social__item">
+                  <a class="footer-social__link social-button social-button--twitter" href="https://www.https://twitter.com/gllacy-shop">Твиттер</a>
                 </li>
-                <li class="options__item">
-                  <input class="options__field" type="checkbox" id="filter-sugar-powder" name="sugar-powder" checked>
-                  <label class="options__value" for="filter-sugar-powder">Сахарные присыпки</label>
+                <li class="footer-social__item">
+                  <a class="footer-social__link social-button social-button--instagram" href="https://www.instagram.com/gllacy-shop/">Инстаграм</a>
                 </li>
-                <li class="options__item">
-                  <input class="options__field" type="checkbox" id="filter-fruits" name="fruits">
-                  <label class="options__value" for="filter-fruits">Фрукты</label>
+                <li class="footer-social__item">
+                  <a class="footer-social__link social-button social-button--facebook" href="https://www.facebook.com/gllacy-shop">Фейсбук</a>
                 </li>
-                <li class="options__item">
-                  <input class="options__field" type="checkbox" id="filter-syrup" name="syrup">
-                  <label class="options__value" for="filter-syrup">Сиропы</label>
-                </li>
-                <li class="options__item">
-                  <input class="options__field" type="checkbox" id="filter-jams" name="jams">
-                  <label class="options__value" for="filter-jams">Джемы</label>
+                <li class="footer-social__item">
+                  <a class="footer-social__link social-button social-button--vkontakte" href="https://vk.com/gllacy-shop">Вконтакте</a>
                 </li>
               </ul>
-            </fieldset>
-            <button class="filter__button" type="submit">Применить</button>
-          </form>
-        </section>
-        <section class="catalog">
-          <h2 class="catalog__title visually-hidden">Каталог сливочного мороженного</h2>
-          <div class="catalog__product product">
-            <img class="product__view" src="img/cream-orange.png" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
-            <div class="product__price">310 ₽<span class="product__measure">/кг</span></div>
-            <h3 class="product__name">Сливочное с апельсиновым джемом и цитрусовой стружкой</h3>
-            <div class="product__order">        
-              <a class="button" href="#">Быстрый просмотр</a>
+            </div>
+            <nav class="footer-navigation">
+              <ul class="footer-navigation__list">
+                <li class="footer-navigation__item">
+                  <a class="footer-navigation__link information-for-suppliers" href="#">Для поставщиков</a>
+                </li>
+                <li class="footer-navigation__item">
+                  <a class="footer-navigation__link" href="#">О производстве</a>
+                </li>
+                <li class="footer-navigation__item"> 
+                  <a class="footer-navigation__link" href="#">Наши документы</a>
+                </li>
+                <li class="footer-navigation__item">
+                  <a class="footer-navigation__link" href="#">Экологические стандарты</a>
+                </li>
+              </ul>
+            </nav>
+            <div class="footer-copyright">
+              <img class="footer-copyright__logo" src="img/logo-htmlacademy.svg" height="39" width="108" alt="Логотип разработчика HTML Academy">
+              <span class="footer-copyright__details">
+                Сделано в <a class="footer-copyright__link" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> @ 2017
+              </span>
             </div>
           </div>
-          <div class="catalog__product product">
-            <img class="product__view" src="img/cream-coffee-chocolate.png" width="267" height="267" alt="Сливочно-кофейное с кусочками шоколада">
-            <div class="product__price">380 ₽<span class="product__measure">/кг</span></div>
-            <h3 class="product__name">Сливочно-кофейное с кусочками шоколада</h3>
-            <div class="product__order">
-              <a class="button" href="#">Быстрый просмотр</a>
-            </div>
-          </div>
-          <div class="catalog__product product">
-            <img class="product__view" src="img/cream-strawberry-white-chocolate.png" width="267" height="267" alt="Сливочно-клубничное с присыпкой из белого шоколада">
-            <div class="product__price">355 ₽<span class="product__measure">/кг</span></div>
-            <h3 class="product__name">Сливочно-клубничное с присыпкой из белого шоколада</h3>           
-            <div class="product__order">   
-              <a class="button" href="#">Быстрый просмотр</a>
-            </div>
-          </div>
-          <div class="catalog__product product">
-            <img class="product__view" src="img/cream-creme-brulee-caramel.png" width="267" height="267" alt="Сливочное крем-брюле с карамельной подливкой">
-            <h3 class="product__name">Сливочное крем-брюле с карамельной подливкой</h3>
-            <div class="product__price">415 ₽<span class="product__measure">/кг</span></div>
-            <div class="product__order"> 
-              <a class="button" href="#">Быстрый просмотр</a>
-            </div>
-          </div>
-          <div class="catalog__product product">
-            <img class="product__view" src="img/cream-cowberry.png" width="267" height="267" alt="Сливочное с брусничным джемом">
-            <div class="product__price">325 ₽<span class="product__measure">/кг</span></div>
-            <h3 class="product__name">Сливочное с брусничным джемом</h3>    
-            <div class="product__order">  
-              <a class="button" href="#">Быстрый просмотр</a>
-            </div>
-          </div>
-          <div class="catalog__product product">
-            <img class="product__view" src="img/cream-blueberry.png" width="267" height="267" alt="Сливочно-черничное с цельными ягодами черники">
-            <div class="product__price">410 ₽<span class="product__measure">/кг</span></div>
-            <h3 class="product__name">Сливочно-черничное с цельными ягодами черники</h3>        
-            <div class="product__order">   
-              <a class="button" href="#">Быстрый просмотр</a>
-            </div>
-          </div>
-          <div class="catalog__product product">
-            <img class="product__view" src="img/cream-lemon.png" width="267" height="267" alt="Сливочно-лимонное с карамельной присыпкой">
-            <div class="product__price">375 ₽<span class="product__measure">/кг</span></div>
-            <h3 class="product__name">Сливочно-лимонное с карамельной присыпкой</h3>           
-            <div class="product__order">
-              <a class="button" href="#">Быстрый просмотр</a>
-            </div>
-          </div>
-          <div class="catalog__product product">
-            <img class="product__view" src="img/cream-chocolate-chips.png" width="267" height="267" alt="Сливочное с шоколадной стружкой">
-            <div class="product__price">320 ₽<span class="product__measure">/кг</span></div>
-            <h3 class="product__name">Сливочное с шоколадной стружкой</h3>            
-            <div class="product__order">
-              <a class="button" href="#">Быстрый просмотр</a>
-            </div>
-          </div>
-          <div class="catalog__product product">
-            <img class="product__view" src="img/cream-vanilla-chocolate-chips.png" width="267" height="267" alt="Сливочно-ванильное с кусочками шоколада">
-            <div class="product__price">440 ₽<span class="product__measure">/кг</span></div>
-            <h3 class="product__name">Сливочно-ванильное с кусочками шоколада</h3>
-            <div class="product__order">              
-              <a class="button" href="#">Быстрый просмотр</a>
-            </div>
-          </div>
-          <div class="catalog__product product">
-            <img class="product__view" src="img/cream-menthol.png" width="267" height="267" alt="Сливочноe с ментоловым сиропом">
-            <div class="product__price">435 ₽<span class="product__measure">/кг</span></div>
-            <h3 class="catalog__product__name">Сливочноe с ментоловым сиропом</h3>            
-            <div class="product__order">             
-              <a class="button" href="#">Быстрый просмотр</a>
-            </div>
-          </div>
-          <div class="catalog__product product">
-            <img class="product__view" src="img/cream-dark-chocolate-chips.png" width="267" height="267" alt="Сливочное с кусочками черного шоколада">
-            <div class="product__price">355 ₽<span class="product__measure">/кг</span></div>
-            <h3 class="product__name">Сливочное с кусочками черного шоколада</h3>            
-            <div class="product__order">              
-              <a class="button" href="#">Быстрый просмотр</a>
-            </div>
-          </div>
-          <div class="catalog__product product">
-            <img class="product__view" src="img/cream-mint.png" width="267" height="267" alt="Сливочное с мятным сиропом">
-            <div class="product__price">420 ₽<span class="product__measure">/кг</span></div>
-            <h3 class="product__name">Сливочное с мятным сиропом</h3><div class="product__order">              
-              <a class="button" href="#">Быстрый просмотр</a>
-            </div>
-          </div>
-          <ul class="pagination-list">
-            <li class="pagination-list__item">
-              <a class="pagination-list__link pagination-list__link--current">1</a>
-            </li>
-            <li class="pagination-list__item">
-              <a class="pagination-list__link" href="#">2</a>
-            </li>
-            <li class="pagination-list__item">
-              <a class="pagination-list__link" href="#">3</a>
-            </li>
-            <li class="pagination-list__item">
-              <a class="pagination-list__link" href="#">4</a>
-            </li>
-            <li class="pagination-list__item">
-              <a class="pagination-list__link" href="#">5</a>
-            </li>
-          </ul>
-        </section>
+        </footer>
       </div>
-    </main>
-    <footer class="main-footer">
-      <div class="container">
-        <div class="footer-social">
-          <ul class="footer-social__list">
-            <li class="footer-social__item">
-              <a class="footer-social__link social-button social-button--twitter" href="https://www.https://twitter.com/gllacy-shop">Твиттер</a>
-            </li>
-            <li class="footer-social__item">
-              <a class="footer-social__link social-button social-button--instagram" href="https://www.instagram.com/gllacy-shop/">Инстаграм</a>
-            </li>
-            <li class="footer-social__item">
-              <a class="footer-social__link social-button social-button--facebook" href="https://www.facebook.com/gllacy-shop">Фейсбук</a>
-            </li>
-            <li class="footer-social__item">
-              <a class="footer-social__link social-button social-button--vkontakte" href="https://vk.com/gllacy-shop">Вконтакте</a>
-            </li>
-          </ul>
-        </div>
-        <nav class="footer-navigation">
-          <ul class="footer-navigation__list">
-            <li class="footer-navigation__item">
-              <a class="footer-navigation__link information-for-suppliers" href="#">Для поставщиков</a>
-            </li>
-            <li class="footer-navigation__item">
-              <a class="footer-navigation__link" href="#">О производстве</a>
-            </li>
-            <li class="footer-navigation__item"> 
-              <a class="footer-navigation__link" href="#">Наши документы</a>
-            </li>
-            <li class="footer-navigation__item">
-              <a class="footer-navigation__link" href="#">Экологические стандарты</a>
-            </li>
-          </ul>
-        </nav>
-        <div class="footer-copyright">
-          <img class="footer-copyright__logo" src="img/logo-htmlacademy.svg" height="108" width="39" alt="Логотип разработчика HTML Academy">
-          <span class="footer-copyright__details">
-            Сделано в <a class="footer-copyright__link" href="https://htmlacademy.ru">HTML Academy</a> @ 2017
-          </span>
-        </div>
-      </div>
-    </footer>
+    </div>
   </body>
 </html>
