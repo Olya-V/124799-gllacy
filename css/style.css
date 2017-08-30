@@ -682,6 +682,10 @@ a {
 
 /* каталог */
 
+.catalog {
+  margin-bottom: 40px;
+}
+
 .catalog--index {
   display: flex;
   justify-content: space-between;
@@ -692,7 +696,7 @@ a {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin-bottom: 15px;
+  margin-bottom: 40px;
 }
 
 .catalog__product {
@@ -1294,44 +1298,72 @@ a {
 /* pagination-list */
 
 .pagination-list {
+
   list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.pagination-list__item {
+  position: relative;
+  width: 26px;
+  margin-right: 10px;
+}
+
+.pagination-list__item:first-child::before {
+  position: absolute;
+  content: "";
+  top: 5px;
+  left: -15px;
+  width: 10px;
+  height: 10px;
+  transform: rotate(45deg);
+  border-left: 1px solid rgba(245, 245, 245, 0.2);
+  border-bottom: 1px solid rgba(245, 245, 245, 0.2);
+  border-top: transparent;
+  border-right: transparent;        
+}
+
+.pagination-list__item:last-child::after {
+  position: absolute;
+  content: "";
+  top: 5px;
+  left: 35px;
+  width: 10px;
+  height: 10px;
+  transform: rotate(45deg);
+  border-right: 1px solid #ffffff;
+  border-top: 1px solid #ffffff;
+  border-bottom: transparent;
+  border-left: transparent;        
 }
 
 .pagination-list__link {
+  padding-top: 5px;
+  padding-left: 10px;
+  padding-bottom: 5px;
+  padding-right: 10px;
   font-size: 16px;
   line-height: 18px;
   font-weight: 500;
   color: #ffffff;
   text-decoration: none;
+  border-radius: 50%;
 }
 
 .pagination-list__link--current {
   color: #323232;
   background-color: #ffffff;
-  padding-top: 5px;
-  padding-left: 10px;
-  padding-bottom: 5px;
-  padding-right: 10px;
-  border-radius: 50%;
 }
 
 .pagination-list__link:hover,
 .pagination-list__link:focus {
   color: #ffffff;
   background-color: #9db1a5;
-  padding-top: 5px;
-  padding-left: 10px;
-  padding-bottom: 5px;
-  padding-right: 10px;
-  border-radius: 50%;
 }
 
 .pagination-list__link:active {
   color: #323232;
   background-color: #ffffff;
-  padding-top: 5px;
-  padding-left: 10px;
-  padding-bottom: 5px;
-  padding-right: 10px;
-  border-radius: 50%;
 }
