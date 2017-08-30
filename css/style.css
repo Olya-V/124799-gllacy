@@ -409,7 +409,7 @@ a {
 .search__form {
   position: absolute;
   top: 59px;
-  left: 670px;
+  left: 710px;
   display: none;
   padding: 20px 15px;
   font-size: 16px;
@@ -749,6 +749,7 @@ a {
 }
 
 .product__link {
+  position: relative;
   display: inline-block;
   color: #ffffff;
 }
@@ -762,7 +763,7 @@ a {
 .product__price {
   position: absolute;
   content: "";
-  top: 200px;
+  top: 60%;
   left: 0px;
   font-size: 45px;
   line-height: 45px;
