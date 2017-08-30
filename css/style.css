@@ -202,16 +202,11 @@ a {
 
 /* главное меню обычное состояние */
 
-.main-header {
-  margin-bottom: 15px;
-}
-
 .header-columns { /* flex-items: main-header__main-navigation + main-header__user-navigation */
   display: flex;
   flex-direction: row;
   align-items: flex-start; 
   justify-content: space-between;
-  margin-bottom: 10px;
 }
 
 .main-header__main-navigation { /* flex-items: logo-navigation + site-navigation */
@@ -1140,6 +1135,13 @@ a {
 .breadcrumbs {
   margin-bottom: 5px;
   list-style: none;
+  display: inline-flex;
+  justify-content: space-between;
+  width: 230px;
+}
+
+.breadcrumbs__item {
+  
 }
 
 .breadcrumbs__link,
