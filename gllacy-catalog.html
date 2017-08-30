@@ -54,73 +54,71 @@
                 <div class="search">
                   <div class="search__icon" title="Поиск">
                     <div class="search__name"><span class="visually-hidden">Поиск</span></div>
-                    <form class="search__form">
-                      <label class="search__filed-name visually-hidden" for="search">Поиск</label>
-                      <input class="search__field" type="search" id="search" name="search" placeholder="Что ищем?">
-                    </form>
                   </div>
+                  <form class="search__form">
+                    <label class="search__filed-name visually-hidden" for="search">Поиск</label>
+                    <input class="search__field" type="search" id="search" name="search" placeholder="Что ищем?">
+                  </form>
                 </div>
                 <div class="user-login">
                   <div class="user-login__icon">
                     <span class="user-login__enter">Вход</span>
-                    <form class="user-login__form" action="https://echo.htmlacademy.ru" method="post">
-                      <div class="user-login__email email">
-                        <label class="email__value visually-hidden" for="login-email">Электронная почта</label>
-                        <input class="email__field" id="login-email" type="text" name="login" autocomplete="on" placeholder="Электронная почта" required>
-                      </div>
-                      <div class="user-login__password password">
-                        <label class="password__value visually-hidden"  for="login-password">Пароль</label>
-                        <input class="password__filed" id="login-password" type="password" name="password" autocomplete="off" placeholder="Пароль" required>
-                      </div>
-                      <button class="button" type="submit">Войти</button>
-                      <div class="user-login__password-info">
-                        <a class="user-login__restore-password" href="restore.html">Забыли пароль?</a>
-                        <a class="user-login__new-user" href="register.html">Новая регистрация</a>
-                      </div>
-                    </form>
                   </div>
+                  <form class="user-login__form" action="https://echo.htmlacademy.ru" method="post">
+                    <div class="user-login__email email">
+                      <label class="email__value visually-hidden" for="login-email">Электронная почта</label>
+                      <input class="email__field" id="login-email" type="text" name="login" autocomplete="on" placeholder="Электронная почта" required>
+                    </div>
+                    <div class="user-login__password password">
+                      <label class="password__value visually-hidden"  for="login-password">Пароль</label>
+                      <input class="password__filed" id="login-password" type="password" name="password" autocomplete="off" placeholder="Пароль" required>
+                    </div>
+                    <button class="button" type="submit">Войти</button>
+                    <div class="user-login__password-info">
+                      <a class="user-login__restore-password" href="restore.html">Забыли пароль?</a>
+                      <a class="user-login__new-user" href="register.html">Новая регистрация</a>
+                    </div>
+                  </form>
                 </div>
                 <div class="cart cart--full">
                   <div class="cart__icon">
-                    <div class="cart__items">
-                      <span class="visually-hidden" title="корзина">Корзина</span>
-                      <span class="cart__total">2 товара</span>
+                    <span class="visually-hidden" title="корзина">Корзина</span>
+                    <span class="cart__total">2 товара</span>
+                  </div>
+                  <div class="cart__form">
+                    <div class="cart__list">
+                      <ul class="cart__item item-details">
+                        <li class="item-details__delete">
+                          <button class="item-details__delete-button" type="button" title="Удалить" value="удалить">Удалить</button>
+                        </li>
+                        <li class="item-details__view">
+                          <img class="item-details__small-picture" src="img/cart-icecream-orange.png" width="33" height="33" alt="Пломбир с апельсиновым джемом">
+                        </li>
+                        <li class="item-details__name">Пломбир с апельсиновым джемом</li>
+                        <li class="item-details__weight">1,5 кг</li>
+                        <li class="item-details__multiply">x</li>
+                        <li class="item-details__price">200 руб.</li>
+                        <li class="item-details__total-price">300 руб.</li>
+                      </ul> 
+                      <ul class="cart__item item-details">
+                        <li class="item-details__delete">
+                          <button class="item-details__delete-button" type="button" title="Удалить" value="удалить">Удалить</button>
+                        </li>
+                        <li class="item-details__view">
+                          <img class="item-details__view-smaill-picture" src="img/cart-icecream-strawberry.png" width="33" height="33" alt="Клубничный пломбир с присыпкой из белого шоколада">
+                        </li>
+                        <li class="item-details__name">Клубничный пломбир с присыпкой из белого шоколада</li>
+                        <li class="item-details__weight">1,5 кг</li>
+                        <li class="item-details__multiply">x</li>
+                        <li class="item-details__price">300 руб.</li>
+                        <li class="item-details__total-price">450 руб.</li> 
+                      </ul>
+                      <ul class="cart__summary total">
+                        <li class="total__title">Итого:</li>
+                        <li class="total__amount">750 руб.</li>
+                      </ul>
                     </div>
-                    <div class="cart__form">
-                      <div class="cart__list">
-                        <ul class="cart__item item-details">
-                          <li class="item-details__delete">
-                            <button class="item-details__delete-button" type="button" title="Удалить" value="удалить">Удалить</button>
-                          </li>
-                          <li class="item-details__view">
-                            <img class="item-details__small-picture" src="img/cart-icecream-orange.png" width="33" height="33" alt="Пломбир с апельсиновым джемом">
-                          </li>
-                          <li class="item-details__name">Пломбир с апельсиновым джемом</li>
-                          <li class="item-details__weight">1,5 кг</li>
-                          <li class="item-details__multiply">x</li>
-                          <li class="item-details__price">200 руб.</li>
-                          <li class="item-details__total-price">300 руб.</li>
-                        </ul> 
-                        <ul class="cart__item item-details">
-                          <li class="item-details__delete">
-                            <button class="item-details__delete-button" type="button" title="Удалить" value="удалить">Удалить</button>
-                          </li>
-                          <li class="item-details__view">
-                            <img class="item-details__view-smaill-picture" src="img/cart-icecream-strawberry.png" width="33" height="33" alt="Клубничный пломбир с присыпкой из белого шоколада">
-                          </li>
-                          <li class="item-details__name">Клубничный пломбир с присыпкой из белого шоколада</li>
-                          <li class="item-details__weight">1,5 кг</li>
-                          <li class="item-details__multiply">x</li>
-                          <li class="item-details__price">300 руб.</li>
-                          <li class="item-details__total-price">450 руб.</li> 
-                        </ul>
-                        <ul class="cart__summary total">
-                          <li class="total__title">Итого:</li>
-                          <li class="total__amount">750 руб.</li>
-                        </ul>
-                      </div>
-                      <button class="button" type="submit">Оформить заказ</button>
-                    </div>
+                    <button class="button" type="submit">Оформить заказ</button>
                   </div>
                 </div>
               </div>
