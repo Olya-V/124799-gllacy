@@ -1324,7 +1324,7 @@ a {
   border-radius: 50%;
 }
 
-.pagination-list__link--previous::before {
+.pagination-list__previous::before {
   position: absolute;
   content: "";
   padding: 0;
@@ -1339,7 +1339,7 @@ a {
   border-right: transparent;       
 }
 
-.pagination-list__link--next::after {
+.pagination-list__next::after {
   position: absolute;
   content: "";
   top: 5px;
