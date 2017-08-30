@@ -1297,12 +1297,16 @@ a {
 
 /* pagination-list */
 
-.pagination-list {
-
-  list-style: none;
+.paginator {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
+}
+
+.pagination-list {
+  list-style: none;
+  display: inline-flex;
+  width: 200px;
 }
 
 .pagination-list__item {
