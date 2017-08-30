@@ -369,6 +369,7 @@ a {
 /* поиск */
 
 .search__icon {
+  position: relative;
   margin-top: 21px;
   padding-bottom: 20px;
 }
@@ -408,8 +409,8 @@ a {
 
 .search__form {
   position: absolute;
-  top: 59px;
-  left: 710px;
+  top: 39px;
+  left: -315px;
   display: none;
   padding: 20px 15px;
   font-size: 16px;
@@ -439,6 +440,7 @@ a {
 /* вход в личный кабинет */
 
 .user-login__icon {
+  position: relative;
   margin-top: 28px;
   padding-bottom: 20px;
 }
@@ -475,8 +477,8 @@ a {
 
 .user-login__form {
   position: absolute;
-  top: 59px;
-  left: 900px;
+  top: 39px;
+  left: -150px;
   display: none;
   padding-top: 20px;
   padding-left: 18px;
@@ -525,6 +527,7 @@ a {
 /* cart */
 
 .cart__icon {
+  position: relative;
   margin-top: 28px;
   padding-bottom: 20px;
 }
@@ -564,8 +567,8 @@ a {
 .cart__form {
   position: absolute;
   display: none;
-  top: 59px;
-  left: 660px;
+  top: 39px;
+  left: -260px;
   padding-top: 20px;
   padding-right: 13px;
   padding-bottom: 20px;
