@@ -746,6 +746,7 @@ a {
   background-image: url("../img/hit.svg");
   background-repeat: no-repeat;
   padding: 31px;
+  z-index: 1;
 }
 
 .product__link {
