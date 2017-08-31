@@ -1117,41 +1117,38 @@ a {
   position: relative;
 }
 
-.social-button::before {
-  position: absolute;
-  content: "";
-  top: 0;
-  left: 0;
+.social-button {
+  display: inline-block;
   width: 32px;
   height: 32px;
   opacity: 0.8;
+  border: 3px solid rgba(255, 255, 255 0.5);
+  border-radius: 50%;
 }
 
-.social-button:hover::before,
-.social-button:focus::before {
+.social-button:hover,
+.social-button:focus {
   opacity: 1;
 }
 
-.social-button:active::before {
+.social-button:active {
   opacity: 1;
   box-shadow: inset 0px 2px 1px 0px rgba(136, 136, 136, 0.004);
 }
 
-
-
-.social-button--twitter::before {
-  background-image: url("../img/twiter.svg");
+.social-button--twitter {
+  background-image: url("../img/twite.svg");
  }
 
-.social-button--instagram::before {
+.social-button--instagram {
    background-image: url("../img/instagram.svg");
 }
 
-.social-button--facebook::before {
+.social-button--facebook {
    background-image: url("../img/fb.svg");
 }
 
-.social-button--vkontakte::before {
+.social-button--vkontakte {
    background-image: url("../img/vk.svg");
 }
 
