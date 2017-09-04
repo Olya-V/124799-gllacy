@@ -4,8 +4,8 @@
     <meta charset="utf-8">
     <title>Магазин мороженого Глейси</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
-    <link href="css/style.css"  type="text/css" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css"  type="text/css" rel="stylesheet">
   </head>
   <body>
     <input type="radio" id="btn-1" name="toggle" checked>
@@ -48,15 +48,16 @@
                       <a class="site-navigation__link" href="delivery.html">Доставка и оплата</a>
                     </li>
                     <li class="site-navigation__item">
-                      <a class="site-navigation__link" href="company-info.html">О компании</a>
+                      <a class="site-navigation__link" href="company-info.html">О Компании</a>
                     </li>
                   </ul>
                 </nav>
               </div>
               <div class="main-header__user-navigation">
                 <div class="search">
-                  <div class="search__icon" title="Поиск">
-                    <div class="search__name"><span class="visually-hidden">Поиск</span></div>
+                  <div class="search__icon">
+                    <span class="visually-hidden">Поиск</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="17" height="17" viewBox="0 0 17 17"><image overflow="visible" width="17" height="17"/><path class="search__sign" fill="#FFF" d="M16.958 15.527L11.75 10.32C12.533 9.247 13 7.93 13 6.5 13 2.91 10.09 0 6.5 0S0 2.91 0 6.5 2.91 13 6.5 13c1.438 0 2.763-.473 3.84-1.263l5.204 5.204 1.414-1.413zM6.5 11C4.02 11 2 8.98 2 6.5S4.02 2 6.5 2 11 4.02 11 6.5 8.98 11 6.5 11z"/></svg>
                   </div>
                   <form class="search__form">
                     <label class="search__filed-name visually-hidden" for="search">Поиск</label>
@@ -64,37 +65,39 @@
                   </form>
                 </div>
                 <div class="user-login">
-                  <div class="user-login__icon">
-                    <span class="user-login__enter">Вход</span>
+                  <div class="user-login__enter">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="21" height="19" viewBox="0 0 21 19" style="position: absolute; left: 16px; top: 6px;"><image overflow="visible" width="21" height="19"/><g fill="#FFF"><path class="login__sign" d="M6 14.875L12.917 9.5 6 4.125v2.917H-.042v4.917H6"/><path class="login__sign" d="M18 0H5C3.9 0 3 .9 3 2v2h2V2h13v15H5v-2H3v2c0 1.1.9 2 2 2h13c1.1 0 2-.9 2-2V2c0-1.1-.9-2-2-2z"/></g></svg>
+                    Вход
                   </div>
                   <form class="user-login__form" action="https://echo.htmlacademy.ru" method="post">
                     <div class="user-login__email email">
                       <label class="email__value visually-hidden" for="login-email">Электронная почта</label>
-                      <input class="email__field" id="login-email" type="text" name="login" autocomplete="on" placeholder="Электронная почта" required>
+                      <input class="email__field" id="login-email" type="email" name="login" autocomplete="on" placeholder="Электронная почта" required>
                     </div>
                     <div class="user-login__password password">
                       <label class="password__value visually-hidden"  for="login-password">Пароль</label>
                       <input class="password__filed" id="login-password" type="password" name="password" autocomplete="off" placeholder="Пароль" required>
                     </div>
-                    <button class="button" type="submit">Войти</button>
-                    <div class="user-login__password-info">
-                      <a class="user-login__restore-password" href="restore.html">Забыли пароль?</a>
-                      <a class="user-login__new-user" href="register.html">Новая регистрация</a>
+                    <div class="user-login__footer">
+                      <button class="button button--login" type="submit">Войти</button>
+                      <div class="user-login__password-info">
+                        <a class="user-login__restore-password" href="restore.html">Забыли пароль?</a>
+                        <a class="user-login__new-user" href="register.html">Новая регистрация</a>
+                      </div>
                     </div>
                   </form>
                 </div>
                 <div class="cart cart--empty">
-                  <div class="cart__icon">
-                    <div class="cart__items">
-                      <span class="visually-hidden" title="корзина">Корзина</span>
-                      <span class="cart__total">Пусто</span>
-                    </div>
+                  <span class="visually-hidden" title="корзина">Корзина</span>
+                  <div class="cart__total">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20" style="position: absolute; left: 17px; top: 6px;"><g fill="#FFF"><path class="cart__sign" d="M5.657 2.03L5.422 0H0v2h3.64l1.5 13h13.988l1.7-12.97H5.657zM17.372 13H6.922L5.888 4.03h12.66L17.372 13z"/><circle class="cart__sign" cx="6.984" cy="18" r="2"/><circle class="cart__sign" cx="15.984" cy="18" r="2"/></g></svg>
+                    <span>Пусто</span>
                   </div>
-                </div>
+                <div>
               </div>
             </div>
             <div class="working-information">
-              <p class="working-information__hours">с 10 до 20, ежедневно</p>
+              <p class="working-information__hours">C 10 до 20, ежедневно</p>
               <p class="working-information__tel">8 812 450-25-25</p>
             </div>
           </div>
@@ -127,22 +130,24 @@
               <div class="banners__item banners__item--raspberry">
                 <h3 class="banners__item-title">Малинка даром!</h3>
                 <p class="banners__offer">При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
-                <a class="button" href="#">Хочу варенье!</a>
+                <a class="button button--banners" href="#">Хочу варенье!</a>
               </div>
               <div class="banners__item banners__item--chocolate">
                 <h3 class="banners__item-title">Шоколадки даром!</h3>
                 <p class="banners__offer">При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
-                <a class="button" href="#">Хочу шоколадки!</a>
+                <a class="button button--banners" href="#">Хочу шоколадки!</a>
               </div>
             </section>
-            <section class="catalog catalog--index">
+            <section class="catalog">
               <h2 class="catalog__title visually-hidden">Хит продаж мороженого магазина Глейси</h2>
               <div class="catalog__product product product--best-seller">
                 <a class="product__link" href="product1.html">
                   <img class="product__view" src="img/cream-orange.png" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
                   <h3 class="product__name">Сливочное с апельсиновым джемом и цитрусовой стружкой</h3>
                 </a>
-                <div class="product__price">310 ₽<span class="product__measure">/кг</span></div>
+                <div class="product__price">
+                 310₽<span class="product__measure">/кг</span>
+                </div>
                 <div class="product__order">
                   <a class="button button--product" href="#">Быстрый просмотр</a>
                 </div>
@@ -152,7 +157,7 @@
                   <img class="product__view" src="img/cream-coffee-chocolate.png" width="267" height="267" alt="Сливочно-кофейное с кусочками шоколада">
                   <h3 class="product__name">Сливочно-кофейное с кусочками шоколада</h3>
                 </a>
-                <div class="product__price">380 ₽<span class="product__measure">/кг</span></div>
+                <div class="product__price">380₽<span class="product__measure">/кг</span></div>
                 <div class="product__order">
                   <a class="button button--product" href="#">Быстрый просмотр</a>
                 </div>
@@ -162,7 +167,7 @@
                   <img class="product__view" src="img/cream-strawberry-white-chocolate.png" width="267" height="267" alt="Сливочно-клубничное с присыпкой из белого шоколада">
                   <h3 class="product__name">Сливочно-клубничное с присыпкой из белого шоколада</h3>
                 </a>
-                <div class="product__price">355 ₽<span class="product__measure">/кг</span></div>
+                <div class="product__price">355₽<span class="product__measure">/кг</span></div>
                 <div class="product__order">
                   <a class="button button--product" href="#">Быстрый просмотр</a>
                 </div>
@@ -210,7 +215,7 @@
                     <p class="subscription-form__greeteting">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
                     <label class="subscription-form__email visually-hidden" for="subscription-email">Электронная почта</label>
                     <input class="subscription-form__email-field" id="subscription-email" type="email" name="email"  placeholder="Электронная почта">
-                    <button class="button" type="submit">Отправить</button>
+                    <button class="button button--subscription" type="submit">Отправить</button>
                   </form>
                 </div>
               </section>
@@ -233,29 +238,31 @@
               <h3 class="shop-contacts__subtitle shop-contacts__subtitle--tel">Для заказов по телефону:</h3>
               <p class="shop-contacts__tel">8 812 450-25-25</p>
               <p class="shop-contacts__working-hours">(с 10 до 20 ежедневно)</p>
-              <a class="button" href="gllacy-feedback.html">Форма обратной связи</a>
+              <a class="button button--contacts" href="gllacy-feedback.html">Форма обратной связи</a>
             </div>
           </div>
         </section>
         <div class="modal-feedback modal">
-          <h2 class="modal-feedback__title visually-hidden">Форма обратной связи магазина Глейси</h2>
-          <p class="modal-feedback__greeting">Мы обязательно вам ответим!</p>
-          <form class="modal-feedback__form feedback-form" action="https://echo.htmlacademy.ru" method="post">
-            <div class="feedback-form__user">
-              <label class="feedback-form__user-name visually-hidden" for="user-name">Имя</label>
-              <input class="feedback-form__user-field" id="user-name" type="text" name="user-name" placeholder="Как вас зовут?">
-            </div>
-            <div class="feedback-form__email">
-              <label class="feedback-form__email-value visually-hidden" for="user-email">Электронная почта</label>
-              <input class="feedback-form__email-field" id="user-email" type="email" name="email"  placeholder="Ваша почта для ответа?">
-            </div>
-            <div class="feedback-form__feedback">
-              <label class="feedback-form__field-name visually-hidden" for="user-feedback">Поле для обращения</label>
-              <textarea class="feedback-form__feedback-field" id="user-feedback" placeholder="Напишите что-нибудь..." rows="5"></textarea>
-            </div>
-            <button class="button" type="submit">Отправить</button>
-          </form>
-          <button class="modal-feedback__close" type="button" title="Закрыть">Закрыть</button>
+          <div class="modal-feedback__dialog">
+            <h2 class="modal-feedback__title visually-hidden">Форма обратной связи магазина Глейси</h2>
+            <p class="modal-feedback__greeting">Мы обязательно вам ответим!</p>
+            <form class="modal-feedback__form feedback-form" action="https://echo.htmlacademy.ru" method="post">
+              <div class="feedback-form__user">
+                <label class="feedback-form__user-name visually-hidden" for="user-name">Имя</label>
+                <input class="feedback-form__user-field" id="user-name" type="text" name="user-name" placeholder="Как вас зовут?">
+              </div>
+              <div class="feedback-form__email">
+                <label class="feedback-form__email-value visually-hidden" for="user-email">Электронная почта</label>
+                <input class="feedback-form__email-field" id="user-email" type="email" name="email"  placeholder="Ваша почта для ответа?">
+              </div>
+              <div class="feedback-form__feedback">
+                <label class="feedback-form__field-name visually-hidden" for="user-feedback">Поле для обращения</label>
+                <textarea class="feedback-form__feedback-field" id="user-feedback" placeholder="Напишите что-нибудь..." rows="5"></textarea>
+              </div>
+              <button class="button button--modal" type="submit">Отправить</button>
+            </form>
+            <button class="modal-feedback__close" type="button" title="Закрыть">Закрыть</button>
+          </div>
         </div>
         <footer class="main-footer">
           <div class="container container--footer">
@@ -264,21 +271,25 @@
                 <li class="footer-social__item">
                   <a class="footer-social__link social-button social-button--twitter" href="https://www.https://twitter.com/gllacy-shop">
                     <span class="visually-hidden">Твиттер</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" viewBox="-3 -3 38 38" stroke="white" stroke-width="6" stroke-opacity="0.5"><path class="footer-social__icon" fill="#FFF"  d="M16 0C7.164 0 0 7.164 0 16c0 8.837 7.164 16 16 16 8.837 0 16-7.163 16-16 0-8.836-7.163-16-16-16zm7.944 12.81c-.25 6.515-3.463 10.83-10.992 10.7h-.487c-.447 0-4.543-.442-5.344-1.822 2.48.19 4.247-.406 5.12-1.136-1.048-.29-2.923-.46-3.25-2.848.383.104.617.22 1.298.113-1.307-.824-2.758-1.52-2.68-3.643.312.317 1.165.518 1.46.457-.767-.232-2.148-3.243-.973-4.78 1.984 1.79 4.075 3.482 7.804 3.643.228-2.214 1.24-3.7 3.17-4.325 1.84-.48 3.254.26 3.9 1.138.737-.224 1.453-.466 2.193-.685-.004.834-.57 1.464-.935 1.71.747.165 1.423-.475 1.423-.475-.183.963-1.093 1.725-1.706 1.954z"/></svg>
                   </a>
                 </li>
                 <li class="footer-social__item">
                   <a class="footer-social__link social-button social-button--instagram" href="https://www.instagram.com/gllacy-shop/">
                     <span class="visually-hidden">Инстаграм</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" viewBox="-3 -3 38 38" stroke="white" stroke-width="6" stroke-opacity="0.5"><g fill="#FFF"><path class="footer-social__icon" d="M20.916 16c0 2.728-2.21 4.938-4.938 4.938s-4.94-2.21-4.94-4.938c0-.394.052-.773.14-1.14h-.898v6.838h11.396V14.86h-.897c.085.367.136.746.136 1.14z"/><path d="M15.978 18.66c1.466 0 2.66-1.194 2.66-2.66s-1.194-2.66-2.66-2.66c-1.466 0-2.66 1.194-2.66 2.66s1.193 2.66 2.66 2.66zM18.637 10.302h3.04v3.04h-3.04z"/><path d="M16 0C7.164 0 0 7.164 0 16c0 8.837 7.164 16 16 16 8.837 0 16-7.163 16-16 0-8.836-7.163-16-16-16zm7.955 21.698c0 1.254-1.025 2.28-2.28 2.28H10.28c-1.254 0-2.28-1.026-2.28-2.28V10.302c0-1.253 1.026-2.28 2.28-2.28h11.395c1.254 0 2.28 1.027 2.28 2.28v11.396z"/></g></svg>
                   </a>
                 </li>
                 <li class="footer-social__item">
                   <a class="footer-social__link social-button social-button--facebook" href="https://www.facebook.com/gllacy-shop">
                     <span class="visually-hidden">Фейсбук</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" viewBox="-3 -3 38 38" stroke="white" stroke-width="6" stroke-opacity="0.5"><path class="footer-social__icon" fill="#FFF" d="M16 0C7.164 0 0 7.163 0 16s7.164 16 16 16c8.837 0 16-7.164 16-16S24.837 0 16 0zm4.062 9.455h-3.02V12.9h3.02v3.444h-3.02v8.61H14.02v-8.61H11V12.9h3.02V9.454c0-1.902 1.354-3.445 3.022-3.445h3.02v3.445z"/></svg>
                   </a>
                 </li>
                 <li class="footer-social__item">
                   <a class="footer-social__link social-button social-button--vkontakte" href="https://vk.com/gllacy-shop">
                     <span class="visually-hidden">Вконтакте</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" viewBox="-3 -3 38 38" stroke="white" stroke-width="6" stroke-opacity="0.5"><g fill="#FFF"><path class="footer-social__icon" d="M16.637 14.495c.402-.02.72-.082.95-.188.327-.145.54-.33.642-.56.1-.228.15-.495.15-.796 0-.23-.06-.464-.175-.696-.116-.232-.322-.405-.617-.517-.264-.1-.592-.155-.984-.165-.392-.01-.943-.014-1.652-.014h-.34v2.965h.566c.57 0 1.057-.01 1.46-.028zM18.118 17.084c-.282-.08-.672-.125-1.166-.132-.494-.006-1.012-.01-1.55-.01h-.79v3.494h.264c1.014 0 1.74-.003 2.18-.01.438-.006.843-.087 1.212-.244.377-.157.633-.364.774-.625s.214-.562.214-.9c0-.446-.088-.788-.26-1.03-.17-.24-.465-.423-.878-.543z"/><path class="footer-social__icon" d="M16 0C7.164 0 0 7.164 0 16c0 8.837 7.164 16 16 16 8.837 0 16-7.163 16-16 0-8.836-7.163-16-16-16zm6.602 20.53c-.273.534-.646.977-1.124 1.328-.552.415-1.16.71-1.823.886s-1.5.264-2.52.264h-6.12V8.988h5.443c1.13 0 1.957.037 2.48.112.524.076 1.045.242 1.56.5.534.27.93.632 1.19 1.087.26.455.392.975.392 1.558 0 .678-.18 1.278-.536 1.795-.358.518-.863.92-1.517 1.208v.075c.917.182 1.642.56 2.18 1.13.536.57.806 1.325.806 2.26 0 .68-.138 1.284-.41 1.818z"/></g></svg>
                   </a>
                 </li>
               </ul>
@@ -288,11 +299,11 @@
                 <li class="footer-navigation__item">
                   <a class="footer-navigation__link information-for-suppliers" href="#">Для поставщиков</a>
                 </li>
-                <li class="footer-navigation__item">
-                  <a class="footer-navigation__link" href="#">О производстве</a>
-                </li>
                 <li class="footer-navigation__item"> 
                   <a class="footer-navigation__link" href="#">Наши документы</a>
+                </li>
+                <li class="footer-navigation__item">
+                  <a class="footer-navigation__link about-manufacture" href="#">О производстве</a>
                 </li>
                 <li class="footer-navigation__item">
                   <a class="footer-navigation__link" href="#">Экологические стандарты</a>
@@ -302,7 +313,8 @@
             <div class="footer-copyright">
               <img class="footer-copyright__logo" src="img/logo-htmlacademy.svg" height="39" width="108" alt="Логотип разработчика HTML Academy">
               <span class="footer-copyright__details">
-                Сделано в <a class="footer-copyright__link" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> @ 2017
+                Сделано в
+                <a class="footer-copyright__link" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> @ 2017
               </span>
             </div>
           </div>
