@@ -323,6 +323,7 @@ input[type="radio"].visually-hidden  {
   box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
   border-radius: 5px;
   z-index: 1;
+  overflow: hidden;
 }
 
 .navigation-catalog__link {
@@ -348,49 +349,15 @@ input[type="radio"].visually-hidden  {
 
 /* наведение выпадающего меню каталога */
 
-.navigation-catalog__link:not(:first-child):not(:last-chiild):hover,
-.navigation-catalog__link:not(:first-child):not(:last-chiild):focus {
+.navigation-catalog__link:hover,
+.navigation-catalog__link:focus {
   background-color: #fbded7;
-  border-top-left-radius: 0px;
-  border-top-right-radius: 0px;
-  border-bottom-left-radius: 0px;
-  border-bottom-right-radius: 0px;
-}
-
-.navigation-catalog__link:first-child:hover,
-.navigation-catalog__link:first-child:focus {
-  background-color: #fbded7;
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
-  border-bottom-left-radius: 0px;
-  border-bottom-right-radius: 0px;
-}
-
-.navigation-catalog__link:last-child:hover,
-.navigation-catalog__link:last-child:focus {
-  background-color: #fbded7;
-  border-top-left-radius: 0px;
-  border-top-right-radius: 0px;
-  border-bottom-left-radius: 5px;
-  border-bottom-right-radius: 5px;
 }
 
 /* нажатие выпадающего меню каталога */
 
-.navigation-catalog__link:first-child:active {
+.navigation-catalog__link:active {
   background-color: #f6b5a5;
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
-  border-bottom-left-radius: 0px;
-  border-bottom-right-radius: 0px;
-}
-
-.navigation-catalog__link:last-child:active {
-  background-color: #f6b5a5;
-  border-top-left-radius: 0px;
-  border-top-right-radius: 0px;
-  border-bottom-left-radius: 5px;
-  border-bottom-right-radius: 5px;
 }
 
 /* находимся на странице раздела каталога*/
@@ -941,7 +908,8 @@ input[type="radio"].visually-hidden  {
 .product__price {
   position: absolute;
   content: "";
-  top: 63%;
+  min-height: 39px;
+  top: 77%;
   left: 0px;
   margin: 0;
   padding: 0;
@@ -952,17 +920,17 @@ input[type="radio"].visually-hidden  {
   cursor: pointer;
 }
 
-.product__measure {
-  margin-left: -10px;
-  font-size: 30px;
-  line-height: 45px;
-}
-
 .product__currency {
   width: 31px;
   height: 36px;
   margin-left: -6px;
-  margin-top: 8px;
+  margin-top: 3px;
+}
+
+.product__measure {
+  margin-left: -12px;
+  font-size: 30px;
+  line-height: 45px;
 }
 
 .product__name {
