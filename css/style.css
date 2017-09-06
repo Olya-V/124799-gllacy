@@ -348,35 +348,47 @@ input[type="radio"].visually-hidden  {
 
 /* наведение выпадающего меню каталога */
 
-.navigation-catalog__link:hover,
-.navigation-catalog__link:focus {
+.navigation-catalog__link:not(:first-child):not(:last-chiild):hover,
+.navigation-catalog__link:not(:first-child):not(:last-chiild):focus {
   background-color: #fbded7;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
 }
 
-.navigation-catalog__link:hover:first-child,
-.navigation-catalog__link:focus:first-child {
+.navigation-catalog__link:first-child:hover,
+.navigation-catalog__link:first-child:focus {
   background-color: #fbded7;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
 }
 
-.navigation-catalog__link:hover:last-child,
-.navigation-catalog__link:focus:last-child {
+.navigation-catalog__link:last-child:hover,
+.navigation-catalog__link:last-child:focus {
   background-color: #fbded7;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
 }
 
 /* нажатие выпадающего меню каталога */
 
-.navigation-catalog__link:active:first-child {
+.navigation-catalog__link:first-child:active {
   background-color: #f6b5a5;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
 }
 
-.navigation-catalog__link:active:last-child {
+.navigation-catalog__link:last-child:active {
   background-color: #f6b5a5;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
 }
