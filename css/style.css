@@ -73,7 +73,6 @@ input[type="radio"].visually-hidden  {
   margin: 0 auto;
   min-width: 900px;
   max-width: 1200px;
-  outline: 1px solid yellow; 
 }
 
 .container {
@@ -354,10 +353,32 @@ input[type="radio"].visually-hidden  {
   background-color: #fbded7;
 }
 
+.navigation-catalog__link:hover:first-child,
+.navigation-catalog__link:focus:first-child {
+  background-color: #fbded7;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.navigation-catalog__link:hover:last-child,
+.navigation-catalog__link:focus:last-child {
+  background-color: #fbded7;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
 /* нажатие выпадающего меню каталога */
 
-.navigation-catalog__link:active {
+.navigation-catalog__link:active:first-child {
   background-color: #f6b5a5;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.navigation-catalog__link:active:last-child {
+  background-color: #f6b5a5;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
 }
 
 /* находимся на странице раздела каталога*/
@@ -1077,6 +1098,7 @@ input[type="radio"].visually-hidden  {
 .news__subscription {
   width: 48.9%;
   margin-right: 0;
+  padding: 5px;
   background-image: url("../img/subscription.png");
   background-repeat: no-repeat;
   background-size: 100% 100%;
@@ -1087,10 +1109,10 @@ input[type="radio"].visually-hidden  {
 .news__subscription__wrap {
   background-color: #f8f7f4;
   border-radius: 10px;
-  padding-top: 32px;
-  padding-left: 26px; 
-  padding-right: 18px;
-  padding-bottom: 31px;
+  padding-top: 26px;
+  padding-left: 21px; 
+  padding-right: 13px;
+  padding-bottom: 26px;
 }
 
 .news-subscription__form {
@@ -1420,6 +1442,7 @@ textarea:focus {
   flex-wrap: wrap;
   align-items: flex-start;
   justify-content: space-between;
+  margin-bottom: 25px;
 }
 
 /* footer-social */
@@ -1860,13 +1883,13 @@ textarea:focus {
   list-style: none;
   display: inline-flex;
   margin-top: 2px;
-  margin-right: 14px;
-  margin-left: 13px;
+  margin-right: 13px;
+  margin-left: 8px;
 }
 
 .pagination__item {
-  min-width: 26px;
-  margin-right: 2px;
+  min-width: 28px;
+  min-height: 28px;
   margin-left: 1px;
   vertical-align: middle;
   text-align: center;
