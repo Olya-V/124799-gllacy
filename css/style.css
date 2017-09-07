@@ -1498,7 +1498,7 @@ input[type="radio"].visually-hidden  {
   line-height: 18px;
   font-weight: 400;
   color: #ffffff;
-  border: 3px solid rgba(255, 255, 2555, 0.502);
+  border: 3px solid rgba(255, 255, 255, 0.502);
   border-radius: 50%;
   opacity: 0.8;
   vertical-align: middle;
@@ -1507,17 +1507,19 @@ input[type="radio"].visually-hidden  {
 
 .footer-social__link:hover,
 .footer-social__link:focus {
-  border: 3px solid rgba(255, 255, 2555, 0.702);
+  border: 3px solid rgba(255, 255, 255, 0.702);
   opacity: 1;
 }
 
 .footer-social__link:active {
-  border: 3px solid rgba(255, 255, 2555, 0.702);
+  border: 3px solid rgba(255, 255, 255, 0.702);
   opacity: 1;
-  box-shadow: inset 0px 2px 1px 0px rgba(136, 136, 136, 1);
 }
 
+.footer-social__link:active svg {
+   filter: url(#inner-shadow);
 
+}
 /* footer-navigation */
 
 .footer-navigation__column-left,
