@@ -8,7 +8,7 @@
     <link href="css/style.css"  type="text/css" rel="stylesheet">
   </head>
   <body>
-    <div class="site-wrapper">
+    <div class="site-wrapper site-wrapper--inner">
       <div class="content-wrapper">
         <header class="main-header">
           <div class="container">
@@ -57,8 +57,10 @@
                     <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="17" height="17" viewBox="0 0 17 17"><image overflow="visible" width="17" height="17"/><path class="search__icon" fill="#FFF" d="M16.958 15.527L11.75 10.32C12.533 9.247 13 7.93 13 6.5 13 2.91 10.09 0 6.5 0S0 2.91 0 6.5 2.91 13 6.5 13c1.438 0 2.763-.473 3.84-1.263l5.204 5.204 1.414-1.413zM6.5 11C4.02 11 2 8.98 2 6.5S4.02 2 6.5 2 11 4.02 11 6.5 8.98 11 6.5 11z"/></svg>
                   </a>
                   <form class="search__form">
-                    <label class="search__filed-name visually-hidden" for="search">Поиск</label>
-                    <input class="search__field" type="search" id="search" name="search" placeholder="Что ищем?">
+                    <input class="search__field" type="search" id="search" name="search" placeholder="Что ищем?" required="">
+                     <div class="search__label-box">
+                      <label class="search__label" for="search">Что ищем?</label>
+                    </div>
                   </form>
                 </div>
                 <div class="user-login">
@@ -68,12 +70,20 @@
                   </a>
                   <form class="user-login__form" action="https://echo.htmlacademy.ru" method="post">
                     <div class="user-login__email email">
-                      <label class="email__value visually-hidden" for="login-email">Электронная почта</label>
                       <input class="email__field" id="login-email" type="email" name="login" autocomplete="on" placeholder="Электронная почта" required>
+                      <div class="email__label-box">
+                        <label class="email__label" for="login-email">
+                          Электронная почта
+                        </label>
+                      </div>
                     </div>
                     <div class="user-login__password password">
-                      <label class="password__value visually-hidden"  for="login-password">Пароль</label>
-                      <input class="password__filed" id="login-password" type="password" name="password" autocomplete="off" placeholder="Пароль" required>
+                      <input class="password__field" id="login-password" type="password" name="password" autocomplete="off" placeholder="Пароль" required>
+                      <div class="password__label-box">
+                        <label class="password__label"  for="login-password">
+                          Пароль
+                        </label>
+                      </div>
                     </div>
                     <div class="user-login__footer">
                       <button class="button button--login" type="submit">Войти</button>
@@ -133,7 +143,7 @@
               </div>
             </div>
             <div class="working-information">
-              <p class="working-information__hours">с 10 до 20, ежедневно</p>
+              <p class="working-information__hours">C 10 до 20, ежедневно</p>
               <p class="working-information__tel">8 812 450-25-25</p>
             </div> 
           </div>
@@ -176,21 +186,21 @@
                         0%
                       </label>
                     </li>
-                     <li class="options__item">
+                    <li class="options__item">
                       <label class="options__value options__value--fat" for="filter-fat-0-10">
                         <input class="options__field options__field--fat visually-hidden" type="radio" id="filter-fat-0-10" name="fat-content" value="below-10" checked>
                         <span class="options__radio"></span>
                         до 10%
                       </label>
                     </li>
-                     <li class="options__item">
+                    <li class="options__item">
                       <label class="options__value options__value--fat" for="filter-fat-10-30">
                         <input class="options__field options__field--fat visually-hidden" type="radio" id="filter-fat-10-30" name="fat-content" value="10-30">
                         <span class="options__radio"></span>
                         до 30%
                       </label>
                     </li>
-                     <li class="options__item">
+                    <li class="options__item">
                       <label class="options__value options__value--fat" for="filter-fat-30">
                         <input class="options__field options__field--fat visually-hidden" type="radio" id="filter-fat-30" name="fat-content" value="30-up">
                         <span class="options__radio"></span>
@@ -400,7 +410,7 @@
                     </div>
                   </a>
                   <a class="product__link" href="#">
-                    <h3 class="product__name">Сливочноe с ментоловым сиропом</h3>            
+                    <h3 class="product__name">Сливочноe с ментоловым сиропом</h3>     
                   </a>
                   <div class="product__order">             
                     <a class="button button--product" href="#" tabindex="-1">Быстрый просмотр</a>
@@ -416,8 +426,7 @@
                     </div>
                   </a>
                   <a class="product__link" href="#">
-                    <h3 class="product__name">Сливочное с кусочками черного шоколада</h3>            
-                  </a>
+                    <h3 class="product__name">Сливочное с кусочками черного шоколада</h3></a>
                   <div class="product__order">              
                     <a class="button button--product" href="#" tabindex="-1">Быстрый просмотр</a>
                   </div>
@@ -474,32 +483,32 @@
                 <li class="footer-social__item">
                   <a class="footer-social__link social-button social-button--twitter" href="https://www.https://twitter.com/gllacy-shop">
                     <span class="visually-hidden">Твиттер</span>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32"><defs><filter id="inner-shadow"><feOffset in="SourceAlpha" dx="0" dy="2" /><feGaussianBlur result="blurOut" stdDeviation="1" /><feFlood flood-color="rgb(136, 136, 136)" result="floodOut" /><feComposite operator="out" in="floodOut" in2="blurOut" result="compOut" /><feComposite operator="in" in="compOut" in2="SourceAlpha" /><feComponentTransfer><feFuncA type="linear" slope="1"/></feComponentTransfer><feBlend mode="normal" in2="SourceGraphic" /></filter></defs><path class="footer-social__icon" fill="#FFF"  d="M16 0C7.164 0 0 7.164 0 16c0 8.837 7.164 16 16 16 8.837 0 16-7.163 16-16 0-8.836-7.163-16-16-16zm7.944 12.81c-.25 6.515-3.463 10.83-10.992 10.7h-.487c-.447 0-4.543-.442-5.344-1.822 2.48.19 4.247-.406 5.12-1.136-1.048-.29-2.923-.46-3.25-2.848.383.104.617.22 1.298.113-1.307-.824-2.758-1.52-2.68-3.643.312.317 1.165.518 1.46.457-.767-.232-2.148-3.243-.973-4.78 1.984 1.79 4.075 3.482 7.804 3.643.228-2.214 1.24-3.7 3.17-4.325 1.84-.48 3.254.26 3.9 1.138.737-.224 1.453-.466 2.193-.685-.004.834-.57 1.464-.935 1.71.747.165 1.423-.475 1.423-.475-.183.963-1.093 1.725-1.706 1.954z"/></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32"><defs><filter id="inner-shadow-twitter"><feOffset in="SourceAlpha" dx="0" dy="2" /><feGaussianBlur result="blurOut" stdDeviation="1" /><feFlood flood-color="rgb(136, 136, 136)" result="floodOut" /><feComposite operator="out" in="floodOut" in2="blurOut" result="compOut" /><feComposite operator="in" in="compOut" in2="SourceAlpha" /><feComponentTransfer><feFuncA type="linear" slope="1"/></feComponentTransfer><feBlend mode="normal" in2="SourceGraphic" /></filter></defs><path class="footer-social__icon" fill="#FFF"  d="M16 0C7.164 0 0 7.164 0 16c0 8.837 7.164 16 16 16 8.837 0 16-7.163 16-16 0-8.836-7.163-16-16-16zm7.944 12.81c-.25 6.515-3.463 10.83-10.992 10.7h-.487c-.447 0-4.543-.442-5.344-1.822 2.48.19 4.247-.406 5.12-1.136-1.048-.29-2.923-.46-3.25-2.848.383.104.617.22 1.298.113-1.307-.824-2.758-1.52-2.68-3.643.312.317 1.165.518 1.46.457-.767-.232-2.148-3.243-.973-4.78 1.984 1.79 4.075 3.482 7.804 3.643.228-2.214 1.24-3.7 3.17-4.325 1.84-.48 3.254.26 3.9 1.138.737-.224 1.453-.466 2.193-.685-.004.834-.57 1.464-.935 1.71.747.165 1.423-.475 1.423-.475-.183.963-1.093 1.725-1.706 1.954z"/></svg>
                   </a>
                 </li>
                 <li class="footer-social__item">
                   <a class="footer-social__link social-button social-button--instagram" href="https://www.instagram.com/gllacy-shop/">
                     <span class="visually-hidden">Инстаграм</span>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32"><defs><filter id="inner-shadow"><feOffset in="SourceAlpha" dx="0" dy="2" /><feGaussianBlur result="blurOut" stdDeviation="1" /><feFlood flood-color="rgb(136, 136, 136)" result="floodOut" /><feComposite operator="out" in="floodOut" in2="blurOut" result="compOut" /><feComposite operator="in" in="compOut" in2="SourceAlpha" /><feComponentTransfer><feFuncA type="linear" slope="1"/></feComponentTransfer><feBlend mode="normal" in2="SourceGraphic" /></filter></defs><g fill="#FFF"><path class="footer-social__icon" d="M20.916 16a4.938 4.938 0 1 1-9.877 0c0-.394.051-.773.138-1.14h-.897v6.838h11.396V14.86h-.897c.086.367.137.746.137 1.14z"/><path class="footer-social__icon" d="M15.978 18.659c1.466 0 2.659-1.193 2.659-2.659s-1.193-2.659-2.659-2.659c-1.466 0-2.659 1.193-2.659 2.659s1.192 2.659 2.659 2.659zM18.637 10.302h3.039v3.039h-3.039z"/><path class="footer-social__icon" d="M16 0C7.164 0 0 7.164 0 16c0 8.837 7.164 16 16 16 8.837 0 16-7.163 16-16 0-8.836-7.163-16-16-16zm7.955 21.698a2.285 2.285 0 0 1-2.279 2.279H10.279A2.285 2.285 0 0 1 8 21.698V10.302a2.286 2.286 0 0 1 2.279-2.279h11.396a2.286 2.286 0 0 1 2.279 2.279v11.396z"/></g></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32"><defs><filter id="inner-shadow-instagram"><feOffset in="SourceAlpha" dx="0" dy="2" /><feGaussianBlur result="blurOut" stdDeviation="1" /><feFlood flood-color="rgb(136, 136, 136)" result="floodOut" /><feComposite operator="out" in="floodOut" in2="blurOut" result="compOut" /><feComposite operator="in" in="compOut" in2="SourceAlpha" /><feComponentTransfer><feFuncA type="linear" slope="1"/></feComponentTransfer><feBlend mode="normal" in2="SourceGraphic" /></filter></defs><g fill="#FFF"><path class="footer-social__icon" d="M20.916 16a4.938 4.938 0 1 1-9.877 0c0-.394.051-.773.138-1.14h-.897v6.838h11.396V14.86h-.897c.086.367.137.746.137 1.14z"/><path class="footer-social__icon" d="M15.978 18.659c1.466 0 2.659-1.193 2.659-2.659s-1.193-2.659-2.659-2.659c-1.466 0-2.659 1.193-2.659 2.659s1.192 2.659 2.659 2.659zM18.637 10.302h3.039v3.039h-3.039z"/><path class="footer-social__icon" d="M16 0C7.164 0 0 7.164 0 16c0 8.837 7.164 16 16 16 8.837 0 16-7.163 16-16 0-8.836-7.163-16-16-16zm7.955 21.698a2.285 2.285 0 0 1-2.279 2.279H10.279A2.285 2.285 0 0 1 8 21.698V10.302a2.286 2.286 0 0 1 2.279-2.279h11.396a2.286 2.286 0 0 1 2.279 2.279v11.396z"/></g></svg>
                   </a>
                 </li>
                 <li class="footer-social__item">
                   <a class="footer-social__link social-button social-button--facebook" href="https://www.facebook.com/gllacy-shop">
                     <span class="visually-hidden">Фейсбук</span>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32"><defs><filter id="inner-shadow"><feOffset in="SourceAlpha" dx="0" dy="2" /><feGaussianBlur result="blurOut" stdDeviation="1" /><feFlood flood-color="rgb(136, 136, 136)" result="floodOut" /><feComposite operator="out" in="floodOut" in2="blurOut" result="compOut" /><feComposite operator="in" in="compOut" in2="SourceAlpha" /><feComponentTransfer><feFuncA type="linear" slope="1"/></feComponentTransfer><feBlend mode="normal" in2="SourceGraphic" /></filter></defs><path class="footer-social__icon" fill="#FFF" d="M16 0C7.164 0 0 7.163 0 16s7.164 16 16 16c8.837 0 16-7.164 16-16S24.837 0 16 0zm4.062 9.455h-3.02V12.9h3.02v3.444h-3.02v8.61H14.02v-8.61H11V12.9h3.02V9.454c0-1.902 1.354-3.445 3.022-3.445h3.02v3.445z"/></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32"><defs><filter id="inner-shadow-facebook"><feOffset in="SourceAlpha" dx="0" dy="2" /><feGaussianBlur result="blurOut" stdDeviation="1" /><feFlood flood-color="rgb(136, 136, 136)" result="floodOut" /><feComposite operator="out" in="floodOut" in2="blurOut" result="compOut" /><feComposite operator="in" in="compOut" in2="SourceAlpha" /><feComponentTransfer><feFuncA type="linear" slope="1"/></feComponentTransfer><feBlend mode="normal" in2="SourceGraphic" /></filter></defs><path class="footer-social__icon" fill="#FFF" d="M16 0C7.164 0 0 7.163 0 16s7.164 16 16 16c8.837 0 16-7.164 16-16S24.837 0 16 0zm4.062 9.455h-3.02V12.9h3.02v3.444h-3.02v8.61H14.02v-8.61H11V12.9h3.02V9.454c0-1.902 1.354-3.445 3.022-3.445h3.02v3.445z"/></svg>
                   </a>
                 </li>
                 <li class="footer-social__item">
                   <a class="footer-social__link social-button social-button--vkontakte" href="https://vk.com/gllacy-shop">
                     <span class="visually-hidden">Вконтакте</span>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32"><defs><filter id="inner-shadow"><feOffset in="SourceAlpha" dx="0" dy="2" /><feGaussianBlur result="blurOut" stdDeviation="1" /><feFlood flood-color="rgb(136, 136, 136)" result="floodOut" /><feComposite operator="out" in="floodOut" in2="blurOut" result="compOut" /><feComposite operator="in" in="compOut" in2="SourceAlpha" /><feComponentTransfer><feFuncA type="linear" slope="1"/></feComponentTransfer><feBlend mode="normal" in2="SourceGraphic" /></filter></defs><g fill="#FFF"><path class="footer-social__icon" d="M16.637 14.495c.402-.02.72-.082.95-.188.327-.145.54-.33.642-.56.1-.228.15-.495.15-.796 0-.23-.06-.464-.175-.696-.116-.232-.322-.405-.617-.517-.264-.1-.592-.155-.984-.165-.392-.01-.943-.014-1.652-.014h-.34v2.965h.566c.57 0 1.057-.01 1.46-.028zM18.118 17.084c-.282-.08-.672-.125-1.166-.132-.494-.006-1.012-.01-1.55-.01h-.79v3.494h.264c1.014 0 1.74-.003 2.18-.01.438-.006.843-.087 1.212-.244.377-.157.633-.364.774-.625s.214-.562.214-.9c0-.446-.088-.788-.26-1.03-.17-.24-.465-.423-.878-.543z"/><path class="footer-social__icon" d="M16 0C7.164 0 0 7.164 0 16c0 8.837 7.164 16 16 16 8.837 0 16-7.163 16-16 0-8.836-7.163-16-16-16zm6.602 20.53c-.273.534-.646.977-1.124 1.328-.552.415-1.16.71-1.823.886s-1.5.264-2.52.264h-6.12V8.988h5.443c1.13 0 1.957.037 2.48.112.524.076 1.045.242 1.56.5.534.27.93.632 1.19 1.087.26.455.392.975.392 1.558 0 .678-.18 1.278-.536 1.795-.358.518-.863.92-1.517 1.208v.075c.917.182 1.642.56 2.18 1.13.536.57.806 1.325.806 2.26 0 .68-.138 1.284-.41 1.818z"/></g>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32"><defs><filter id="inner-shadow-vkontakte"><feOffset in="SourceAlpha" dx="0" dy="2" /><feGaussianBlur result="blurOut" stdDeviation="1" /><feFlood flood-color="rgb(136, 136, 136)" result="floodOut" /><feComposite operator="out" in="floodOut" in2="blurOut" result="compOut" /><feComposite operator="in" in="compOut" in2="SourceAlpha" /><feComponentTransfer><feFuncA type="linear" slope="1"/></feComponentTransfer><feBlend mode="normal" in2="SourceGraphic" /></filter></defs><g fill="#FFF"><path class="footer-social__icon" d="M16.637 14.495c.402-.02.72-.082.95-.188.327-.145.54-.33.642-.56.1-.228.15-.495.15-.796 0-.23-.06-.464-.175-.696-.116-.232-.322-.405-.617-.517-.264-.1-.592-.155-.984-.165-.392-.01-.943-.014-1.652-.014h-.34v2.965h.566c.57 0 1.057-.01 1.46-.028zM18.118 17.084c-.282-.08-.672-.125-1.166-.132-.494-.006-1.012-.01-1.55-.01h-.79v3.494h.264c1.014 0 1.74-.003 2.18-.01.438-.006.843-.087 1.212-.244.377-.157.633-.364.774-.625s.214-.562.214-.9c0-.446-.088-.788-.26-1.03-.17-.24-.465-.423-.878-.543z"/><path class="footer-social__icon" d="M16 0C7.164 0 0 7.164 0 16c0 8.837 7.164 16 16 16 8.837 0 16-7.163 16-16 0-8.836-7.163-16-16-16zm6.602 20.53c-.273.534-.646.977-1.124 1.328-.552.415-1.16.71-1.823.886s-1.5.264-2.52.264h-6.12V8.988h5.443c1.13 0 1.957.037 2.48.112.524.076 1.045.242 1.56.5.534.27.93.632 1.19 1.087.26.455.392.975.392 1.558 0 .678-.18 1.278-.536 1.795-.358.518-.863.92-1.517 1.208v.075c.917.182 1.642.56 2.18 1.13.536.57.806 1.325.806 2.26 0 .68-.138 1.284-.41 1.818z"/></g>
                     </svg>
                   </a>
                 </li>
               </ul>
             </div>
             <nav class="footer-navigation">
-              <ul class="footer-navigation__column-left">
+              <ul class="footer-navigation__list">
                 <li class="footer-navigation__item">
                   <a class="footer-navigation__link information-for-suppliers" href="#">Для поставщиков</a>
                 </li>
@@ -507,14 +516,14 @@
                   <a class="footer-navigation__link about-manufacture" href="#">О производстве</a>
                 </li>
               </ul>
-               <ul class="footer-navigation__column-right">
+              <ul class="footer-navigation__list">
                 <li class="footer-navigation__item"> 
                   <a class="footer-navigation__link" href="#">Наши документы</a>
                 </li>
                 <li class="footer-navigation__item">
                   <a class="footer-navigation__link" href="#">Экологические стандарты</a>
                 </li>
-              </ul>
+              </ul>           
             </nav>
             <div class="footer-copyright">
               <img class="footer-copyright__logo" src="img/logo-htmlacademy.svg" width="109" height="37" alt="Логотип разработчика HTML Academy">
