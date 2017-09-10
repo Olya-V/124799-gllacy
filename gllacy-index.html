@@ -263,8 +263,8 @@
           </div>
         </main>
         <section class="contacts">
-          <div class="contacts__map map">
-            <span class="visually-hidden">Главнй офис и магазин по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург"</span>
+          <iframe class="contacts__map map" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1998.5991032728616!2d30.3216802!3d59.9387942!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1505050597119" width="600" height="430" style="border:0" allowfullscreen></iframe>
+            <span class="visually-hidden">Главный офис и магазин по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург"</span>
             <div class="contacts__details shop-contacts">
               <h2 class="shop-contacts__title visually-hidden">Контакты магазина Глейси</h2>
               <h3 class="shop-contacts__subtitle">
@@ -280,7 +280,7 @@
               <p class="shop-contacts__working-hours">(с 10 до 20 ежедневно)</p>
               <a class="button button--contacts" href="gllacy-feedback.html">Форма обратной связи</a>
             </div>
-          </div>
+
         </section>
         <div class="modal-feedback modal">
           <div class="modal-feedback__dialog">
@@ -304,7 +304,7 @@
                 </div>
               </div>
               <div class="feedback-form__feedback">
-                <textarea class="feedback-form__feedback-field" id="user-feedback" placeholder="Напишите что-нибудь..." rows="5" required></textarea>
+                <textarea class="feedback-form__feedback-field" name="user-feedback" id="user-feedback" placeholder="Напишите что-нибудь..." rows="5" required></textarea>
                 <div class="feedback-form__label-box">
                   <label class="feedback-form__label feedback-form__label--feedback" for="user-feedback">
                     Напишите что-нибудь...
@@ -376,5 +376,6 @@
         </footer>
       </div>
     </div>
+    <script src="js/scripts.min.js"></script>
   </body>
 </html>

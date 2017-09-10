@@ -1189,7 +1189,6 @@ input[type="radio"].visually-hidden  {
   background-image: url("../img/hit.svg");
   background-repeat: no-repeat;
   padding: 31px;
-  z-index: 1;
 }
 
 .product__link {
@@ -1545,13 +1544,11 @@ input[type="radio"].visually-hidden  {
 /* contacts */
 
 .contacts {
-  margin-bottom: 17px;
+  position: relative;
+  margin-bottom: 9px;
 }
 
 .contacts__map {
-  padding-top: 62px;
-  padding-right: 27px;
-  padding-bottom: 40px;
   background-image: url("../img/map.jpg");
   background-color: #cee0c0;
   background-repeat: no-repeat;
@@ -1561,9 +1558,11 @@ input[type="radio"].visually-hidden  {
 }
 
 .contacts__details {
+  position: absolute;
+  top: 60px;
+  right: 28px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  margin-left: auto;
   width: 302px;
   padding-top: 28px;
   padding-left: 25px; 
@@ -1581,7 +1580,6 @@ input[type="radio"].visually-hidden  {
   font-size: 14px;
   line-height: 20px;
   font-weight: 400;
-
 }
 
 .shop-contacts__subtitle--tel {
@@ -1630,12 +1628,63 @@ input[type="radio"].visually-hidden  {
   padding-right: 26px;
 }
 
-/* modal */
+/* modal feedback amination */
+
+@keyframes bounce {
+  0% {
+    transform: translateY(-2000px);
+  }
+
+  70% {
+    transform: translateY(30px);
+  }
+
+  90% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(10px);
+  }
+}
+
+/* modal feedback */
 
 .modal-feedback {
   display: none;
   position: fixed;
   color: #323232;
+}
+
+.modal-open {
+  display: block;
+  animation: bounce 0.6s;
+}
+
+.modal-error {
+  animation: shake 0.6s;
 }
 
 .modal-feedback:before {
@@ -1901,7 +1950,7 @@ input[type="radio"].visually-hidden  {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-bottom: 25px;
+  margin-bottom: 15px;
 }
 
 /* footer-social */
