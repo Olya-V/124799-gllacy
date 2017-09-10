@@ -1950,7 +1950,7 @@ input[type="radio"].visually-hidden  {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-bottom: 15px;
+  padding-bottom: 19px;
 }
 
 /* footer-social */
@@ -2040,19 +2040,20 @@ input[type="radio"].visually-hidden  {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  width: 345px;
+  width: 390px;
 }
 
 .footer-navigation__list {
   margin: 0;
   padding: 0;
-  padding-top: 17px;
+  padding-top: 16px;
   list-style: none;
 }
 
 .footer-navigation__link {
   display: block;
   margin-bottom: 4px;
+  padding-left: 22px;
   font-size: 13px;
   line-height: 18px;
   font-weight: 400;
@@ -2060,29 +2061,19 @@ input[type="radio"].visually-hidden  {
 }
 
 .footer-navigation__list:nth-of-type(n) {
-  margin-right: 32px;
+  margin-right: 9px;
 }
 
 .footer-navigation__list:nth-of-type(2n) {
   margin-right: 0;
 }
 
-
 .information-for-suppliers {
-  position: relative;
   font-weight: 700;
-}
-
-.information-for-suppliers::before {
-  content:"";
-  position: absolute;
-  top: 2px;
-  left: -21px;
-  width: 15px;
-  height: 13px; 
   background-image: url("../img/heart.svg");
   background-repeat: no-repeat;
-} 
+  background-position: left;
+}
 
 .footer-navigation__link:hover,
 .footer-navigation__link:focus,
