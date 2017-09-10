@@ -1968,7 +1968,7 @@ input[type="radio"].visually-hidden  {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
-  width: 260px;
+  width: 240px;
   padding-top: 17px;
  }
 
@@ -2040,7 +2040,7 @@ input[type="radio"].visually-hidden  {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  width: 390px;
+  width: 370px;
 }
 
 .footer-navigation__list {
