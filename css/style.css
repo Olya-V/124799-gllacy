@@ -2376,7 +2376,7 @@ input[type="radio"].visually-hidden  {
   -webkit-appearance: none;
   -moz-appearance: none;
   -ms-appearance: none;
-      appearance: none; /*!important;*/
+      appearance: none!important;
   text-indent: 0.01px; 
   -o-text-overflow: ''; 
      text-overflow: '';
